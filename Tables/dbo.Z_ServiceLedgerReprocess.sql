@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[Z_ServiceLedgerReprocess] (
+  [sum_other_revenue] [decimal] NOT NULL,
+  [sum_other_due] [decimal] NOT NULL,
+  [sum_ins_revenue] [decimal] NOT NULL,
+  [sum_ins_paid] [decimal] NOT NULL,
+  [sum_ins_due] [decimal] NOT NULL,
+  [sum_disallowed] [decimal] NOT NULL,
+  [sum_client_revenue] [decimal] NOT NULL,
+  [sum_client_paid] [decimal] NOT NULL,
+  [sum_client_due] [decimal] NOT NULL,
+  [sum_adjusted] [decimal] NOT NULL,
+  [serviceledger_id] [int] NOT NULL,
+  [running_rate] [decimal] NOT NULL,
+  [payer_id] [int] NOT NULL,
+  [parent_serviceledger_id] [int] NOT NULL,
+  [out_of_balance] [bit] NOT NULL,
+  [oth_payer_payer_id] [int] NOT NULL,
+  [error] [varchar](100) NOT NULL,
+  [cur_payer_balance] [decimal] NOT NULL,
+  [cur_oth_payer_balance] [decimal] NOT NULL,
+  [cur_ins_balance] [decimal] NOT NULL,
+  [cur_client_balance] [decimal] NOT NULL,
+  [clientvisit_id] [int] NOT NULL,
+  [amount] [decimal] NOT NULL,
+  [adjustmenttype] [varchar](50) NOT NULL,
+  [action_type] [varchar](50) NOT NULL,
+  [action_date] [datetime] NOT NULL
+)
+ON [PRIMARY]
+GO

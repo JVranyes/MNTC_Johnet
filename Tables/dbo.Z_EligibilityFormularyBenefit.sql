@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[Z_EligibilityFormularyBenefit] (
+  [subscriber_start_date] [datetime] NOT NULL,
+  [subscriber_end_date] [datetime] NOT NULL,
+  [specialty_care_plan_name] [varchar](50) NOT NULL,
+  [retail_plan_name] [varchar](50) NOT NULL,
+  [plan_network_id] [varchar](50) NOT NULL,
+  [plan_id] [varchar](50) NOT NULL,
+  [plan_description] [varchar](50) NOT NULL,
+  [pcn] [varchar](80) NOT NULL,
+  [pbm_member_id] [varchar](80) NOT NULL,
+  [payer_name] [varchar](60) NOT NULL,
+  [payer_id] [varchar](80) NOT NULL,
+  [monetary_amount] [decimal] NOT NULL,
+  [mail_order_plan_name] [varchar](50) NOT NULL,
+  [long_term_care_plan_name] [varchar](50) NOT NULL,
+  [load271_id] [int] NOT NULL,
+  [interchange_control_number] [int] NOT NULL,
+  [insurance_type] [varchar](3) NOT NULL,
+  [group_number] [varchar](50) NOT NULL,
+  [group_name] [varchar](80) NOT NULL,
+  [formulary_id] [varchar](50) NOT NULL,
+  [eligibility_formulary_benefit_id] [int] NOT NULL,
+  [demo_different] [bit] NOT NULL,
+  [date_updated] [datetime] NOT NULL,
+  [coverage_id] [varchar](50) NOT NULL,
+  [copay_id] [varchar](50) NOT NULL,
+  [client_id] [int] NOT NULL,
+  [card_number] [varchar](50) NOT NULL,
+  [alternate_id] [varchar](50) NOT NULL,
+  [active] [bit] NOT NULL
+)
+ON [PRIMARY]
+GO

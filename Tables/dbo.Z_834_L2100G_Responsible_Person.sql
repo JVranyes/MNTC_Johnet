@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[Z_834_L2100G_Responsible_Person] (
+  [zip] [varchar](15) NOT NULL,
+  [temp2] [char](1) NOT NULL,
+  [suffix] [varchar](10) NOT NULL,
+  [street2] [varchar](55) NOT NULL,
+  [street1] [varchar](55) NOT NULL,
+  [state] [char](2) NOT NULL,
+  [prefix] [varchar](10) NOT NULL,
+  [middlename] [varchar](25) NOT NULL,
+  [lastname] [varchar](35) NOT NULL,
+  [l2100d_id] [int] NOT NULL,
+  [l2000_id] [int] NOT NULL,
+  [id_code_qual] [char](2) NOT NULL,
+  [firstname] [varchar](25) NOT NULL,
+  [entity_qual] [char](1) NOT NULL,
+  [entity_id_code] [char](2) NOT NULL,
+  [country] [char](3) NOT NULL,
+  [contact_qual3] [char](2) NOT NULL,
+  [contact_qual2] [char](2) NOT NULL,
+  [contact_number3] [varchar](80) NOT NULL,
+  [contact_number2] [varchar](80) NOT NULL,
+  [contact_function_code] [char](2) NOT NULL,
+  [code4_end] [char](1) NOT NULL,
+  [code3_end] [char](1) NOT NULL,
+  [code2_end] [char](1) NOT NULL,
+  [code1_end] [char](1) NOT NULL,
+  [city] [varchar](30) NOT NULL,
+  [batch_id] [int] NOT NULL
+)
+ON [PRIMARY]
+GO

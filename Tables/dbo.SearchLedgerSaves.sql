@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[SearchLedgerSaves] (
+  [wh_val2] [varchar](36) NOT NULL,
+  [wh_val1] [varchar](36) NOT NULL,
+  [wh_fld2] [varchar](50) NOT NULL,
+  [wh_fld1] [varchar](50) NOT NULL,
+  [wh_cmp2] [varchar](6) NOT NULL,
+  [wh_cmp1] [varchar](6) NOT NULL,
+  [wh_andor] [varchar](4) NOT NULL,
+  [status] [varchar](15) NOT NULL,
+  [startdate_use_today] [bit] NOT NULL,
+  [sortby2] [varchar](30) NOT NULL,
+  [show_undo] [bit] NOT NULL,
+  [show_revenue] [bit] NOT NULL,
+  [show_appr] [bit] NOT NULL,
+  [searchledgersaves_id] [int] NOT NULL,
+  [search_team] [smallint] NOT NULL,
+  [save_name] [varchar](30) NOT NULL,
+  [save_date] [smalldatetime] NOT NULL,
+  [rev_amounts] [bit] NOT NULL,
+  [payer_type] [varchar](25) NOT NULL,
+  [group_totals_only] [bit] NOT NULL,
+  [global_view] [bit] NOT NULL,
+  [enddate_use_today] [bit] NOT NULL,
+  [emp_id] [smallint] NOT NULL,
+  [default_view] [bit] NOT NULL,
+  [date_type] [varchar](25) NOT NULL,
+  [billing_ord] [smallint] NOT NULL,
+  [argl_export] [bit] NOT NULL,
+  [adjust_code] [varchar](15) NOT NULL,
+  [account_code] [varchar](50) NOT NULL
+)
+ON [PRIMARY]
+GO

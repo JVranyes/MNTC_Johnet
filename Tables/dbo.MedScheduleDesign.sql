@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[MedScheduleDesign] (
+  [VisitTypeId] [smallint] NOT NULL,
+  [UseCounts] [bit] NOT NULL,
+  [TrackUnusedMedReason] [bit] NOT NULL,
+  [ShowTotalTaken] [bit] NOT NULL,
+  [RouteTime] [nvarchar](100) NOT NULL,
+  [Quantity] [nvarchar](25) NOT NULL,
+  [ProgramId] [smallint] NOT NULL,
+  [PrnInterval] [tinyint] NOT NULL,
+  [NotifyEnd] [bit] NOT NULL,
+  [MedScheduleDesignId] [int] NOT NULL,
+  [MedId] [int] NOT NULL,
+  [MedEdited] [bit] NOT NULL,
+  [MaxDailyAdmins] [tinyint] NOT NULL,
+  [IsTitration] [bit] NOT NULL,
+  [IsStat] [bit] NOT NULL,
+  [IsPRN] [bit] NOT NULL,
+  [InitialCount] [decimal] NOT NULL,
+  [Frequency] [nvarchar](100) NOT NULL,
+  [EnableAutoTracking] [bit] NOT NULL,
+  [DosageAction] [nvarchar](50) NOT NULL,
+  [DiscontinuedDate] [datetime2] NOT NULL,
+  [DeletedDate] [datetime2] NOT NULL,
+  [DeletedByEmpId] [smallint] NOT NULL,
+  [CreatedDate] [datetime2] NOT NULL,
+  [CreatedByEmpId] [smallint] NOT NULL,
+  [AdminWindow] [smallint] NOT NULL,
+  [AdditionalComments] [nvarchar](300) NOT NULL
+)
+ON [PRIMARY]
+GO

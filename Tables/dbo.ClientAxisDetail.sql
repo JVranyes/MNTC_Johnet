@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[ClientAxisDetail] (
+  [updatedby_emp_id] [smallint] NOT NULL,
+  [specifier_text] [varchar](250) NOT NULL,
+  [source] [varchar](20) NOT NULL,
+  [snomed_cid] [bigint] NOT NULL,
+  [rotext] [varchar](250) NOT NULL,
+  [reconciled_cda] [bit] NOT NULL,
+  [problem_list_order] [tinyint] NOT NULL,
+  [previous_onset_date] [smalldatetime] NOT NULL,
+  [onset_prior_to_admission] [char](1) NOT NULL,
+  [is_ro] [bit] NOT NULL,
+  [is_provisional] [bit] NOT NULL,
+  [is_chronic] [bit] NOT NULL,
+  [is_42cfr] [bit] NOT NULL,
+  [icd10_code] [varchar](8) NOT NULL,
+  [final_active_client_axis_id] [int] NOT NULL,
+  [diagnosed_date] [smalldatetime] NOT NULL,
+  [diagnosed_by] [varchar](65) NOT NULL,
+  [deleted] [bit] NOT NULL,
+  [defaultforprograms] [varchar](500) NOT NULL,
+  [date_updated] [datetime] NOT NULL,
+  [date_resolved] [smalldatetime] NOT NULL,
+  [date_created] [datetime] NOT NULL,
+  [cloned] [bit] NOT NULL,
+  [clientaxisdetail_id] [int] NOT NULL,
+  [axisorder] [tinyint] NOT NULL,
+  [axislevel] [tinyint] NOT NULL,
+  [axis_code] [varchar](7) NOT NULL
+)
+ON [PRIMARY]
+GO

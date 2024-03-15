@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[Z_ServiceLedgerType] (
+  [ledgertype_id] [tinyint] NOT NULL,
+  [is_undo] [bit] NOT NULL,
+  [is_transfer] [bit] NOT NULL,
+  [is_suppressed] [bit] NOT NULL,
+  [is_service_rate] [bit] NOT NULL,
+  [is_service_init] [bit] NOT NULL,
+  [is_service_amount] [bit] NOT NULL,
+  [is_search] [bit] NOT NULL,
+  [is_reversible] [bit] NOT NULL,
+  [is_revenue_export] [bit] NOT NULL,
+  [is_other_due] [bit] NOT NULL,
+  [is_ins_payment] [bit] NOT NULL,
+  [is_ins_add_payment] [bit] NOT NULL,
+  [is_gl_export_full] [bit] NOT NULL,
+  [is_exportable] [bit] NOT NULL,
+  [is_disallowed] [bit] NOT NULL,
+  [is_credit] [bit] NOT NULL,
+  [is_client_payment] [bit] NOT NULL,
+  [is_client_add_payment] [bit] NOT NULL,
+  [is_charge] [bit] NOT NULL,
+  [is_balance] [bit] NOT NULL,
+  [is_adjustment_all] [bit] NOT NULL,
+  [has_due_amounts] [bit] NOT NULL,
+  [balance_multiplier] [smallint] NOT NULL,
+  [appear_on_statement_as] [varchar](50) NOT NULL,
+  [action_type] [varchar](30) NOT NULL
+)
+ON [PRIMARY]
+GO

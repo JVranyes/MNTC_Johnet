@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[MedScheduleData] (
+  [weeks] [tinyint] NOT NULL,
+  [txtstartdate] [datetime] NOT NULL,
+  [txtenddate] [datetime] NOT NULL,
+  [txtdosageamt] [varchar](25) NOT NULL,
+  [txtadmintimes] [varchar](200) NOT NULL,
+  [txtadditionalcomments] [varchar](200) NOT NULL,
+  [tday] [tinyint] NOT NULL,
+  [tcount] [tinyint] NOT NULL,
+  [stat] [bit] NOT NULL,
+  [rp] [char](1) NOT NULL,
+  [prn_interval] [tinyint] NOT NULL,
+  [occurweek] [varchar](75) NOT NULL,
+  [occurmonth] [char](1) NOT NULL,
+  [occurday] [char](1) NOT NULL,
+  [num_occ] [smallint] NOT NULL,
+  [months2] [smallint] NOT NULL,
+  [monthday] [tinyint] NOT NULL,
+  [medscheduledata_id] [int] NOT NULL,
+  [hdnmedid] [int] NOT NULL,
+  [dddosageroute] [varchar](50) NOT NULL,
+  [dddosageqty] [varchar](25) NOT NULL,
+  [dddosageaction] [varchar](50) NOT NULL,
+  [days] [smallint] NOT NULL,
+  [created_by_emp_id] [smallint] NOT NULL,
+  [create_date] [datetime] NOT NULL,
+  [ckfrominventory] [bit] NOT NULL
+)
+ON [PRIMARY]
+GO

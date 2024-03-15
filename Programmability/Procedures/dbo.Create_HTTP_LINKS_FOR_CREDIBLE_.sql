@@ -5,7 +5,7 @@ CREATE PROCEDURE [dbo].[Create_HTTP_LINKS_FOR_CREDIBLE_]
 AS
 
 DECLARE @test4 NVARCHAR(256)
-DECLARE @test3 NVARCHAR(256)
+DECLARE @test3 NVARCHAR(512)
 DECLARE @test2 NVARCHAR(256)
 DECLARE @test1 NVARCHAR(256)
 DECLARE @Enumerator TABLE (HEXTBLNM varchar(256), TBLNAME varchar(256))
@@ -42,8 +42,7 @@ IF @i = 100
 
 PRINT CONVERT(varchar,GETDATE()) + ' THIS IS @i: ' + CONVERT(VARCHAR,@i)
 SELECT @test4 = TBLNAME FROM @Enumerator
-
-    
+   
     END
   
 
@@ -53,8 +52,11 @@ SELECT @test4 = TBLNAME FROM @Enumerator
 
 --
 --PRINT 'TABLENAME: ' + CONVERT(VARCHAR,@test1)
+--SELECT THIS.TBLURLWOOHOO FROM (
+--SELECT @RowCount AS RC, @i AS COUNTER, 'curl -o ' + CONVERT(varchar,@test1) + '.xml https://reportservices.crediblebh.com/reports/ExportService.asmx/ExportDataSet?connection=mvkWghyUAJrZM-NZ9Yay4nl4EqjPrquYzZHYuuUT2VpP27Ts3AVwYQxNjWfrmJGwH22IHhethap2dpUeXJZg7Q__' + '"&start_date=&end_date=&custom_param1=' + @test3 + '&custom_param2=&custom_param3="' AS TBLURLWOOHOO
+SELECT 'curl -o ' + CONVERT(varchar,@test1) + '.xml https://reportservices.crediblebh.com/reports/ExportService.asmx/ExportDataSet?connection=mvkWghyUAJrZM-NZ9Yay4nl4EqjPrquYzZHYuuUT2VpP27Ts3AVwYQxNjWfrmJGwH22IHhethap2dpUeXJZg7Q__' + '"&start_date=&end_date=&custom_param1=' +  @test3 + '&custom_param2=&custom_param3="' 
+--) THIS
 
-SELECT @RowCount, @i, 'curl -o ' + CONVERT(varchar,@test1) + '.xml https://reportservices.crediblebh.com/reports/ExportService.asmx/ExportDataSet?connection=mvkWghyUAJrZM-NZ9Yay4nl4EqjPrquYzZHYuuUT2VpP27Ts3AVwYQxNjWfrmJGwH22IHhethap2dpUeXJZg7Q__' + '"&start_date=&end_date=&custom_param1=' + @test3 + '&custom_param2=&custom_param3="' AS TBLURLWOOHOO
 
 SET @i = 1
 SET @test1 = ''
@@ -72,4 +74,7 @@ SET @RowCount -= 1;  --END ROW COUNTS
 --SELECT 'curl ' + ' https://reportservices.crediblebh.com/reports/ExportService.asmx/ExportDataSet?connection=mvkWghyUAJrZM-NZ9Yay4nl4EqjPrquYzZHYuuUT2VpP27Ts3AVwYQxNjWfrmJGwH22IHhethap2dpUeXJZg7Q__' + '"&start_date=&end_date=&custom_param1=' + @test3 + '&custom_param2=&custom_param3="' AS TBLURLWOOHOO
 
 
+GO
+
+GRANT EXECUTE ON [dbo].[Create_HTTP_LINKS_FOR_CREDIBLE_] TO [General]
 GO

@@ -1,45 +1,35 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-
 CREATE PROCEDURE [dbo].[CreateCredibleLinksForCurlWorking]  
 
 AS
 
-DECLARE @test varchar(5000);
-DECLARE @test2 varchar(5000);
-DECLARE @test3 varchar(5000);
+DECLARE @test nvarchar(512)
 DECLARE @i int = 1
-DECLARE @tempCat varchar(255);
-SET @tempCat = '';
-SET @test = ''
-SET @test2 = ''
-SET @test3 = ''
 
-
-WHILE @i < 35
+WHILE @i < 101
 
 BEGIN
-SELECT @test2 = MOSTOUTER.OUTERLOOP
-FROM 
-(
-SELECT SUBSTRING(JJ.HEX_AS_ASCIIOUT,1,3) AS OUTERLOOP
-  FROM
-   (
-  
-    SELECT TN.IIII, SUBSTRING(TN.TBLNAM,1,LEN(TN.TBLNAM)) AS HEXSTRING, SUBSTRING(TN.TBLNAM2, @i, 3) AS HEX_AS_ASCIIOUT FROM
-      (
-      SELECT DISTINCT(CAST((TABLE_NAME) AS VARBINARY)) AS TBLNAM, 'THIS IS @I: ' AS PRNT, @i AS IIII, ((STUFF(CONVERT(VARCHAR(100),CAST('SELECT * FROM '+ TABLE_NAME AS VARBINARY),2 ), @i, 0, '%'))) AS TBLNAM2
-      FROM Johnet.dbo.Credible_Database_Schema_Columns_DataTypesSizes
-      ) AS TN
-  
-  ) AS JJ
 
-) AS MOSTOUTER
+
+SELECT JJ.HEX_AS_ASCIIOUT AS PAYLOAD FROM
+ (
+
+  SELECT TN.IIII, SUBSTRING(TN.TBLNAM,1,LEN(TN.TBLNAM)) AS HEXSTRING, SUBSTRING(TN.TBLNAM2, @i, 3) AS HEX_AS_ASCIIOUT, @test AS TEST FROM
+    (
+    SELECT DISTINCT(CAST((TABLE_NAME) AS VARBINARY)) AS TBLNAM, 'THIS IS @I: ' AS PRNT, @i AS IIII, ((STUFF(CONVERT(VARCHAR(100),CAST('SELECT * FROM '+ TABLE_NAME AS VARBINARY),2 ), @i, 0, '%'))) AS TBLNAM2
+    FROM Credible_Database_Schema_Columns_DataTypesSizes
+    ) AS TN
+) AS JJ
+
+--SET @test = SUBSTRING(TN.TBLNAM2, @i, 3)
+
+--SELECT 'John: ' & JJ.HEX_AS_ASCIIOUT
+
 set @i = @i + 2
 
-SELECT @test3 = @test3 + @test2
-
 END
+GO
 
-SELECT @test3
+GRANT EXECUTE ON [dbo].[CreateCredibleLinksForCurlWorking] TO [General]
 GO

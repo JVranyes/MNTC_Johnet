@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[ImportAuthorizations] (
+  [visittype_id9] [smallint] NOT NULL,
+  [visittype_id8] [smallint] NOT NULL,
+  [visittype_id7] [smallint] NOT NULL,
+  [visittype_id6] [smallint] NOT NULL,
+  [visittype_id5] [smallint] NOT NULL,
+  [visittype_id4] [smallint] NOT NULL,
+  [visittype_id3] [smallint] NOT NULL,
+  [visittype_id2] [smallint] NOT NULL,
+  [visittype_id15] [smallint] NOT NULL,
+  [visittype_id14] [smallint] NOT NULL,
+  [visittype_id13] [smallint] NOT NULL,
+  [visittype_id12] [smallint] NOT NULL,
+  [visittype_id11] [smallint] NOT NULL,
+  [visittype_id10] [smallint] NOT NULL,
+  [visittype_group] [varchar](25) NOT NULL,
+  [program_id] [smallint] NOT NULL,
+  [period_start] [smalldatetime] NOT NULL,
+  [period_end] [smalldatetime] NOT NULL,
+  [payer_id] [smallint] NOT NULL,
+  [location_id] [smallint] NOT NULL,
+  [external_id] [varchar](12) NOT NULL,
+  [ext_units_used] [decimal] NOT NULL,
+  [credential_group] [varchar](12) NOT NULL,
+  [count_units] [tinyint] NOT NULL,
+  [client_id] [int] NOT NULL,
+  [auth_units] [decimal] NOT NULL,
+  [auth_number] [varchar](50) NOT NULL,
+  [auth_level] [varchar](50) NOT NULL,
+  [auth_date] [smalldatetime] NOT NULL
+)
+ON [PRIMARY]
+GO

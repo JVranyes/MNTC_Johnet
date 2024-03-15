@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[CrediblePlan] (
+  [wileygroup_id] [int] NOT NULL,
+  [updatedby_emp_id] [smallint] NOT NULL,
+  [target_date] [smalldatetime] NOT NULL,
+  [start_date] [smalldatetime] NOT NULL,
+  [show_inactiveelement] [bit] NOT NULL,
+  [program_id] [smallint] NOT NULL,
+  [prev_credibleplan_id] [int] NOT NULL,
+  [is_template] [bit] NOT NULL,
+  [is_snapshot] [bit] NOT NULL,
+  [is_being_edited] [bit] NOT NULL,
+  [has_documentation] [bit] NOT NULL,
+  [fromtemplate_id] [int] NOT NULL,
+  [fromstructure_id] [int] NOT NULL,
+  [fromruleset_id] [int] NOT NULL,
+  [fromplantype_id] [int] NOT NULL,
+  [end_date] [smalldatetime] NOT NULL,
+  [employee_printname] [varchar](150) NOT NULL,
+  [editby_emp_id] [smallint] NOT NULL,
+  [edit_datetime] [datetime] NOT NULL,
+  [deleted] [bit] NOT NULL,
+  [date_updated] [datetime] NOT NULL,
+  [date_created] [datetime] NOT NULL,
+  [createdby_emp_id] [smallint] NOT NULL,
+  [clientvisit_temp_id] [int] NOT NULL,
+  [clientvisit_id] [int] NOT NULL,
+  [client_printname] [varchar](150) NOT NULL,
+  [client_id] [int] NOT NULL,
+  [approval_date] [datetime] NOT NULL,
+  [activeAtSave] [bit] NOT NULL
+)
+ON [PRIMARY]
+GO

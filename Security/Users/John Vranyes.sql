@@ -1,0 +1,3 @@
+﻿CREATE USER [John Vranyes]
+  WITHOUT LOGIN
+GO

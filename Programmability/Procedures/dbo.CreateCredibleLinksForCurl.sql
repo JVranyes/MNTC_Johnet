@@ -20,3 +20,6 @@ SELECT DISTINCT TABLE_NAME FROM Credible_Database_Schema_Columns_DataTypesSizes
 
 ORDER BY Makeq.ONCE
 GO
+
+GRANT EXECUTE ON [dbo].[CreateCredibleLinksForCurl] TO [General]
+GO

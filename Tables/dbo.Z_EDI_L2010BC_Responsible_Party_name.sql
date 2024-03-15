@@ -1,0 +1,23 @@
+﻿CREATE TABLE [dbo].[Z_EDI_L2010BC_Responsible_Party_name] (
+  [zip] [varchar](15) NOT NULL,
+  [suffix] [varchar](10) NOT NULL,
+  [state] [char](2) NOT NULL,
+  [prefix] [varchar](10) NOT NULL,
+  [middle_name] [varchar](25) NOT NULL,
+  [last_name_or_org] [varchar](35) NOT NULL,
+  [l2010bc_id] [int] NOT NULL,
+  [l2000b_id] [char](10) NOT NULL,
+  [id_code_qual] [varchar](2) NOT NULL,
+  [first_name] [varchar](25) NOT NULL,
+  [entity_type_qual] [int] NOT NULL,
+  [entity_id_code] [char](3) NOT NULL,
+  [country_code] [char](3) NOT NULL,
+  [code3_end] [char](1) NOT NULL,
+  [code2_end] [char](1) NOT NULL,
+  [code1_end] [char](1) NOT NULL,
+  [city] [varchar](30) NOT NULL,
+  [batch_id] [int] NOT NULL,
+  [address_info2] [varchar](55) NOT NULL
+)
+ON [PRIMARY]
+GO

@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[FosterHome] (
+  [zip] [varchar](50) NOT NULL,
+  [status] [varchar](12) NOT NULL,
+  [state] [char](3) NOT NULL,
+  [start_date] [smalldatetime] NOT NULL,
+  [service_category] [varchar](50) NOT NULL,
+  [phone] [varchar](20) NOT NULL,
+  [num_existing_minors] [smallint] NOT NULL,
+  [min_age] [tinyint] NOT NULL,
+  [max_age] [tinyint] NOT NULL,
+  [is_respite] [bit] NOT NULL,
+  [home_cert_dt] [smalldatetime] NOT NULL,
+  [gender] [char](1) NOT NULL,
+  [fosterhome_name] [varchar](150) NOT NULL,
+  [fosterhome_id] [smallint] NOT NULL,
+  [fax] [varchar](20) NOT NULL,
+  [end_date] [smalldatetime] NOT NULL,
+  [email] [varchar](100) NOT NULL,
+  [dhs_location_code] [varchar](50) NOT NULL,
+  [dhs_id] [varchar](50) NOT NULL,
+  [city] [varchar](50) NOT NULL,
+  [capacity] [smallint] NOT NULL,
+  [availability] [smallint] NOT NULL,
+  [archive] [bit] NOT NULL,
+  [alt_phone] [varchar](20) NOT NULL,
+  [address2] [varchar](50) NOT NULL,
+  [address1] [varchar](50) NOT NULL,
+  [additional_id] [varchar](50) NOT NULL,
+  [accept_medicalconditions] [bit] NOT NULL,
+  [accept_jvrecord] [bit] NOT NULL
+)
+ON [PRIMARY]
+GO
