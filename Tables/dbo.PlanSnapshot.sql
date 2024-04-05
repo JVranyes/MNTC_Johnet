@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[PlanSnapshot] (
-  [snapshot_id] [int] NOT NULL,
-  [datetime_saved] [datetime] NOT NULL,
-  [credibleplan_id] [int] NOT NULL
+  [datetime_saved] [datetime] NULL,
+  [credibleplan_id] [int] NULL,
+  [snapshot_id] [int] NULL
 )
 ON [PRIMARY]
 GO

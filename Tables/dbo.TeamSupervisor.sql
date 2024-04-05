@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[TeamSupervisor] (
-  [team_id] [smallint] NOT NULL,
-  [emp_id] [smallint] NOT NULL
+  [emp_id] [smallint] NULL,
+  [team_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

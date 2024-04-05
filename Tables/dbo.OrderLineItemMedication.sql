@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[OrderLineItemMedication] (
-  [order_id] [int] NOT NULL,
-  [medicationorder_id] [int] NOT NULL
+  [order_id] [int] NULL,
+  [medicationorder_id] [int] NULL
 )
 ON [PRIMARY]
 GO

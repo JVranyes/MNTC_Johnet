@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[PlannerGroupClient] (
-  [plannergroupclient_id] [int] NOT NULL,
-  [plannergroup_id] [smallint] NOT NULL
+  [plannergroup_id] [smallint] NULL,
+  [client_id] [int] NULL,
+  [plannergroupclient_id] [int] NULL
 )
 ON [PRIMARY]
 GO

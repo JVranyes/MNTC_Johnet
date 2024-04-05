@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[IntegrationMessageDestinations] (
-  [IntegrationMessageId] [int] NOT NULL,
-  [Destination] [nvarchar](200) NOT NULL
+  [Destination] [nvarchar](200) NULL,
+  [IntegrationMessageId] [int] NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

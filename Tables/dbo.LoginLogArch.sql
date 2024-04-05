@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[LoginLogArch] (
-  [username] [varchar](50) NOT NULL,
-  [loginlog_id] [int] NOT NULL,
-  [logindatetime] [datetime] NOT NULL,
-  [ip_address] [varchar](15) NOT NULL,
-  [inout] [varchar](3) NOT NULL
+  [ip_address] [varchar](15) NULL,
+  [inout] [varchar](3) NULL,
+  [logindatetime] [datetime] NULL,
+  [username] [varchar](50) NULL,
+  [loginlog_id] [int] NULL
 )
 ON [PRIMARY]
 GO

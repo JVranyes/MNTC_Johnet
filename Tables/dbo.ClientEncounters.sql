@@ -1,19 +1,19 @@
 ﻿CREATE TABLE [dbo].[ClientEncounters] (
-  [updateEmp_id] [smallint] NOT NULL,
-  [updateDateTime_utc] [datetime2] NOT NULL,
-  [print_medication_schedule] [bit] NOT NULL,
-  [primaryClientVisit_id] [int] NOT NULL,
-  [next_visittype_id] [int] NOT NULL,
-  [next_visitdate] [datetime2] NOT NULL,
-  [is_printed] [bit] NOT NULL,
-  [is_approved] [bit] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [createdDateTime_utc] [datetime2] NOT NULL,
-  [createdByEmp_id] [smallint] NOT NULL,
-  [clientEncounter_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL,
-  [approvedEmp_id] [smallint] NOT NULL,
-  [approvedDateTime_utc] [datetime2] NOT NULL
+  [approvedDateTime_utc] [datetime2] NULL,
+  [approvedEmp_id] [smallint] NULL,
+  [print_medication_schedule] [bit] NULL,
+  [is_approved] [bit] NULL,
+  [next_visitdate] [datetime2] NULL,
+  [next_visittype_id] [int] NULL,
+  [is_printed] [bit] NULL,
+  [updateEmp_id] [smallint] NULL,
+  [updateDateTime_utc] [datetime2] NULL,
+  [deleted] [bit] NULL,
+  [createdByEmp_id] [smallint] NULL,
+  [createdDateTime_utc] [datetime2] NULL,
+  [primaryClientVisit_id] [int] NULL,
+  [client_id] [int] NULL,
+  [clientEncounter_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,11 +1,13 @@
 ﻿CREATE TABLE [dbo].[ReportUsage] (
-  [viewer] [char](5) NOT NULL,
-  [saved_report_name] [varchar](50) NOT NULL,
-  [rname] [varchar](150) NOT NULL,
-  [reportusage_id] [int] NOT NULL,
-  [rcode] [varchar](50) NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [date_ran_utc] [datetime2] NOT NULL
+  [date_ran_utc] [datetime2] NULL,
+  [saved_report_name] [varchar](50) NULL,
+  [saved_report] [bit] NULL,
+  [viewer] [char](5) NULL,
+  [rcode] [varchar](50) NULL,
+  [rname] [varchar](150) NULL,
+  [date_ran] [smalldatetime] NULL,
+  [emp_id] [smallint] NULL,
+  [reportusage_id] [int] NULL
 )
 ON [PRIMARY]
 GO

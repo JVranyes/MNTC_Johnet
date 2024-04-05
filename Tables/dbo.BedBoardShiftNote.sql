@@ -1,18 +1,18 @@
 ﻿CREATE TABLE [dbo].[BedBoardShiftNote] (
-  [visittemp_id] [int] NOT NULL,
-  [utc_date_updated] [datetime] NOT NULL,
-  [utc_date_created] [datetime] NOT NULL,
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [timezone_date_updated] [datetime] NOT NULL,
-  [timezone_date_created] [datetime] NOT NULL,
-  [form_ver_id] [int] NOT NULL,
-  [empvisit_id] [int] NOT NULL,
-  [employee_id] [int] NOT NULL,
-  [createdby_emp_id] [smallint] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL,
-  [bedboardshiftnote_id] [int] NOT NULL,
-  [bedboardshift_id] [int] NOT NULL
+  [empvisit_id] [int] NULL,
+  [employee_id] [int] NULL,
+  [utc_date_updated] [datetime] NULL,
+  [utc_date_created] [datetime] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [createdby_emp_id] [smallint] NULL,
+  [clientvisit_id] [int] NULL,
+  [form_ver_id] [int] NULL,
+  [visittemp_id] [int] NULL,
+  [client_id] [int] NULL,
+  [bedboardshift_id] [int] NULL,
+  [timezone_date_updated] [datetime] NULL,
+  [timezone_date_created] [datetime] NULL,
+  [bedboardshiftnote_id] [int] NULL
 )
 ON [PRIMARY]
 GO

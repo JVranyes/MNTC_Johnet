@@ -1,17 +1,18 @@
 ﻿CREATE TABLE [dbo].[IdGen] (
-  [statement_id] [int] NOT NULL,
-  [purgeclientgroup_id] [int] NOT NULL,
-  [overproduction_id] [int] NOT NULL,
-  [load997_id] [int] NOT NULL,
-  [load835_id] [int] NOT NULL,
-  [load271_id] [int] NOT NULL,
-  [l2400_id] [int] NOT NULL,
-  [l2300_id] [int] NOT NULL,
-  [enrollmentbatch_id] [int] NOT NULL,
-  [downloadfile_id] [int] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [claim_id] [int] NOT NULL,
-  [autonum1] [int] NOT NULL
+  [purgeclientgroup_id] [int] NULL,
+  [overproduction_id] [int] NULL,
+  [autonum1] [int] NULL,
+  [load271_id] [int] NULL,
+  [downloadfile_id] [int] NULL,
+  [load997_id] [int] NULL,
+  [enrollmentbatch_id] [int] NULL,
+  [clientvisit_id] [int] NULL,
+  [l2400_id] [int] NULL,
+  [l2300_id] [int] NULL,
+  [load835_id] [int] NULL,
+  [statement_id] [int] NULL,
+  [claim_id] [int] NULL,
+  [batch_id] [int] NULL
 )
 ON [PRIMARY]
 GO

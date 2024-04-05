@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[ClientVisitExternalUrls] (
-  [UrlName] [varchar](200) NOT NULL,
-  [IsDeleted] [bit] NOT NULL,
-  [Id] [int] NOT NULL,
-  [DeletedDate] [datetime] NOT NULL,
-  [DeletedByEmp] [smallint] NOT NULL,
-  [DateAdded] [datetime] NOT NULL,
-  [ClientVisitId] [int] NOT NULL,
-  [ClientVisitExternalUrlTypeId] [smallint] NOT NULL,
-  [ClientId] [int] NOT NULL
+  [DeletedByEmp] [smallint] NULL,
+  [DeletedDate] [datetime] NULL,
+  [IsDeleted] [bit] NULL,
+  [ClientVisitId] [int] NULL,
+  [ClientId] [int] NULL,
+  [ClientVisitExternalUrlTypeId] [smallint] NULL,
+  [DateAdded] [datetime] NULL,
+  [UrlName] [varchar](200) NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

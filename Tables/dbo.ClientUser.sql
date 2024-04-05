@@ -1,19 +1,19 @@
 ﻿CREATE TABLE [dbo].[ClientUser] (
-  [username] [varchar](40) NOT NULL,
-  [token_guid] [uniqueidentifier] NOT NULL,
-  [profile_code] [varchar](12) NOT NULL,
-  [login_datetime] [datetime] NOT NULL,
-  [last_name] [varchar](35) NOT NULL,
-  [ip_address] [varchar](15) NOT NULL,
-  [hash_password] [varchar](32) NOT NULL,
-  [first_name] [varchar](25) NOT NULL,
-  [email] [varchar](100) NOT NULL,
-  [date_requested] [datetime] NOT NULL,
-  [date_password_updated] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [clientuser_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL,
-  [change_password] [bit] NOT NULL
+  [date_requested] [datetime] NULL,
+  [date_created] [datetime] NULL,
+  [date_password_updated] [datetime] NULL,
+  [change_password] [bit] NULL,
+  [email] [varchar](100) NULL,
+  [token_guid] [uniqueidentifier] NULL,
+  [ip_address] [varchar](15) NULL,
+  [last_name] [varchar](35) NULL,
+  [first_name] [varchar](25) NULL,
+  [login_datetime] [datetime] NULL,
+  [profile_code] [varchar](12) NULL,
+  [hash_password] [varchar](32) NULL,
+  [username] [varchar](40) NULL,
+  [client_id] [int] NULL,
+  [clientuser_id] [int] NULL
 )
 ON [PRIMARY]
 GO

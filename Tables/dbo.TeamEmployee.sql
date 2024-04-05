@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[TeamEmployee] (
-  [view_clients] [bit] NOT NULL,
-  [team_id] [smallint] NOT NULL,
-  [primary_flag] [bit] NOT NULL,
-  [notifications] [bit] NOT NULL,
-  [is_leader] [bit] NOT NULL,
-  [instant_messaging] [bit] NOT NULL,
-  [inactive] [bit] NOT NULL,
-  [emp_id] [smallint] NOT NULL
+  [view_clients] [bit] NULL,
+  [notifications] [bit] NULL,
+  [instant_messaging] [bit] NULL,
+  [inactive] [bit] NULL,
+  [primary_flag] [bit] NULL,
+  [is_leader] [bit] NULL,
+  [emp_id] [smallint] NULL,
+  [team_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

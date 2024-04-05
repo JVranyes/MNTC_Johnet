@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[SavedVisitAnswerNoteView] (
-  [question_id] [int] NOT NULL,
-  [clientvisit_id] [int] NOT NULL
+  [question_id] [int] NULL,
+  [clientvisit_id] [int] NULL
 )
 ON [PRIMARY]
 GO

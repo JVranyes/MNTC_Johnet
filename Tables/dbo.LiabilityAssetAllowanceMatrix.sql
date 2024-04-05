@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[LiabilityAssetAllowanceMatrix] (
-  [DEPENDENTS] [smallint] NOT NULL,
-  [ALLOWANCE] [int] NOT NULL
+  [ALLOWANCE] [int] NULL,
+  [DEPENDENTS] [smallint] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[ProgramTxPlusCategories] (
-  [txplus_problem] [varchar](50) NOT NULL,
-  [txplus_objective] [varchar](50) NOT NULL,
-  [txplus_intervention] [varchar](50) NOT NULL,
-  [txplus_goal] [varchar](50) NOT NULL,
-  [program_id] [int] NOT NULL,
-  [program_desc] [varchar](50) NOT NULL,
-  [partner_id] [int] NOT NULL,
-  [employee_id] [int] NOT NULL
+  [program_desc] [varchar](50) NULL,
+  [employee_id] [int] NULL,
+  [partner_id] [int] NULL,
+  [txplus_intervention] [varchar](50) NULL,
+  [txplus_objective] [varchar](50) NULL,
+  [txplus_goal] [varchar](50) NULL,
+  [txplus_problem] [varchar](50) NULL,
+  [program_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[CategoryNavigation] (
-  [navigation_type] [char](1) NOT NULL,
-  [navigation_desc] [varchar](20) NOT NULL
+  [navigation_desc] [varchar](20) NULL,
+  [navigation_type] [char](1) NULL
 )
 ON [PRIMARY]
 GO

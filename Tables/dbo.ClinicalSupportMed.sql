@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ClinicalSupportMed] (
-  [fdb_medid] [int] NOT NULL,
-  [clinicalsupportmed_id] [int] NOT NULL,
-  [clinicalsupport_id] [int] NOT NULL
+  [fdb_medid] [int] NULL,
+  [clinicalsupport_id] [int] NULL,
+  [clinicalsupportmed_id] [int] NULL
 )
 ON [PRIMARY]
 GO

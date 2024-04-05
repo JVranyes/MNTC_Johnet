@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[ClientPaymentPlanNote] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [enteredby_emp_id] [smallint] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_entered] [datetime] NOT NULL,
-  [clientpaymentplannote_id] [int] NOT NULL,
-  [clientpaymentplan_id] [int] NOT NULL
+  [deleted] [bit] NULL,
+  [date_updated] [datetime] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_entered] [datetime] NULL,
+  [enteredby_emp_id] [smallint] NULL,
+  [clientpaymentplan_id] [int] NULL,
+  [clientpaymentplannote_id] [int] NULL
 )
 ON [PRIMARY]
 GO

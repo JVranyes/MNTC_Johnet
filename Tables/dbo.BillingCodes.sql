@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[BillingCodes] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [description] [varchar](255) NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [billingcodetype] [varchar](2) NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [datetime] NULL,
+  [description] [varchar](255) NULL,
+  [billingcodetype] [varchar](2) NULL,
+  [billingcode] [varchar](30) NULL
 )
 ON [PRIMARY]
 GO

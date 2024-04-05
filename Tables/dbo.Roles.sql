@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[Roles] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [updated_by] [smallint] NOT NULL,
-  [role_id] [smallint] NOT NULL,
-  [role_desc] [varchar](250) NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [updated_by] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [role_desc] [varchar](250) NULL,
+  [role] [varchar](25) NULL,
+  [role_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

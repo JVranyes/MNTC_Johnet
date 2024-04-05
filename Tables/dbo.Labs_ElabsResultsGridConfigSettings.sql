@@ -1,13 +1,14 @@
 ﻿CREATE TABLE [dbo].[Labs_ElabsResultsGridConfigSettings] (
-  [PropertyNameToBind] [varchar](100) NOT NULL,
-  [Order] [int] NOT NULL,
-  [IsSortable] [bit] NOT NULL,
-  [IsIncluded] [bit] NOT NULL,
-  [IsEmphasized] [bit] NOT NULL,
-  [IsBlockedFromEmphasized] [bit] NOT NULL,
-  [IsBlockedForExclusion] [bit] NOT NULL,
-  [EmployeeId] [int] NOT NULL,
-  [ConfigId] [int] NOT NULL
+  [IsIncluded] [bit] NULL,
+  [IsEmphasized] [bit] NULL,
+  [IsBlockedFromEmphasized] [bit] NULL,
+  [IsBlockedForExclusion] [bit] NULL,
+  [IsSortable] [bit] NULL,
+  [PropertyNameToBind] [varchar](100) NULL,
+  [Name] [varchar](100) NULL,
+  [Order] [int] NULL,
+  [EmployeeId] [int] NULL,
+  [ConfigId] [int] NULL
 )
 ON [PRIMARY]
 GO

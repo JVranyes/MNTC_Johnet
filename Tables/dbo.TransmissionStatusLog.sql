@@ -1,16 +1,17 @@
 ﻿CREATE TABLE [dbo].[TransmissionStatusLog] (
-  [visit_id] [int] NOT NULL,
-  [transmission_time] [datetime] NOT NULL,
-  [transmission_status_log_id] [int] NOT NULL,
-  [transmission_status_change_id] [int] NOT NULL,
-  [transmission_process_id] [int] NOT NULL,
-  [transaction_id] [varchar](50) NOT NULL,
-  [sequence_id] [bigint] NOT NULL,
-  [message_type_id] [int] NOT NULL,
-  [message_id] [int] NOT NULL,
-  [employee_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL,
-  [aggregator_id] [int] NOT NULL
+  [sequence_id] [bigint] NULL,
+  [message_type_id] [int] NULL,
+  [employee_id] [int] NULL,
+  [visit_id] [int] NULL,
+  [client_id] [int] NULL,
+  [aggregator_id] [int] NULL,
+  [transmission_status_change_id] [int] NULL,
+  [transmission_process_id] [int] NULL,
+  [transmission_status] [varchar](50) NULL,
+  [transaction_id] [varchar](50) NULL,
+  [message_id] [int] NULL,
+  [transmission_time] [datetime] NULL,
+  [transmission_status_log_id] [int] NULL
 )
 ON [PRIMARY]
 GO

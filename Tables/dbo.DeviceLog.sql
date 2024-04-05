@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[DeviceLog] (
-  [transfer_date] [smalldatetime] NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [devicelog_id] [int] NOT NULL
+  [transfer_date] [smalldatetime] NULL,
+  [emp_id] [smallint] NULL,
+  [devicelog_id] [int] NULL
 )
 ON [PRIMARY]
 GO

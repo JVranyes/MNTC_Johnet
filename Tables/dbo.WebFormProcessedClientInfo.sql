@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[WebFormProcessedClientInfo] (
-  [ProcessedDate] [datetime] NOT NULL,
-  [CLIENTLIABILITY_ID] [int] NOT NULL,
-  [CLIENT_ID] [int] NOT NULL
+  [ProcessedDate] [datetime] NULL,
+  [CLIENTLIABILITY_ID] [int] NULL,
+  [CLIENT_ID] [int] NULL
 )
 ON [PRIMARY]
 GO

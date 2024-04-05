@@ -1,19 +1,19 @@
 ﻿CREATE TABLE [dbo].[QcQualifyingCriterias] (
-  [updatedby_emp_id] [int] NOT NULL,
-  [StartDate] [datetime2] NOT NULL,
-  [Soc] [int] NOT NULL,
-  [QcQualifyingCriteriaId] [int] NOT NULL,
-  [QcCode] [nvarchar](20) NOT NULL,
-  [QcCategoryId] [int] NOT NULL,
-  [QcBenefitId] [int] NOT NULL,
-  [Mhs] [bit] NOT NULL,
-  [Epsdt] [bit] NOT NULL,
-  [EndDate] [datetime2] NOT NULL,
-  [Dmc] [bit] NOT NULL,
-  [Deactivate] [bit] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [createdby_emp_id] [int] NOT NULL
+  [date_updated] [datetime] NULL,
+  [updatedby_emp_id] [int] NULL,
+  [date_created] [datetime] NULL,
+  [createdby_emp_id] [int] NULL,
+  [Deactivate] [bit] NULL,
+  [QcCategoryId] [int] NULL,
+  [QcBenefitId] [int] NULL,
+  [EndDate] [datetime2] NULL,
+  [StartDate] [datetime2] NULL,
+  [Epsdt] [bit] NULL,
+  [Dmc] [bit] NULL,
+  [Mhs] [bit] NULL,
+  [Soc] [int] NULL,
+  [QcCode] [nvarchar](20) NULL,
+  [QcQualifyingCriteriaId] [int] NULL
 )
 ON [PRIMARY]
 GO

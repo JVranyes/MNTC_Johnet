@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [dbo].[BedBoardShiftStatus] (
-  [bedboardshiftstatusId] [int] NOT NULL
+  [bedboardshiftstatus] [nvarchar](15) NULL,
+  [bedboardshiftstatusId] [int] NULL
 )
 ON [PRIMARY]
 GO

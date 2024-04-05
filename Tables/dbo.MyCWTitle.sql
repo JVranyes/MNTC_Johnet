@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[MyCWTitle] (
-  [updated_by] [int] NOT NULL,
-  [title] [varchar](50) NOT NULL,
-  [mycwtitle_id] [int] NOT NULL,
-  [is_emptitle] [bit] NOT NULL,
-  [is_dashboardtitle] [bit] NOT NULL,
-  [is_clientusertitle] [bit] NOT NULL,
-  [is_clienttitle] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [updated_by] [int] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [is_clientusertitle] [bit] NULL,
+  [is_emptitle] [bit] NULL,
+  [is_dashboardtitle] [bit] NULL,
+  [is_clienttitle] [bit] NULL,
+  [title] [varchar](50) NULL,
+  [mycwtitle_id] [int] NULL
 )
 ON [PRIMARY]
 GO

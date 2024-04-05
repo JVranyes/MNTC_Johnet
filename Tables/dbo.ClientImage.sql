@@ -1,11 +1,12 @@
 ﻿CREATE TABLE [dbo].[ClientImage] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [deleted_on] [datetime] NOT NULL,
-  [deleted_by_emp_id] [int] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL,
-  [clientimage_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL
+  [deleted_by_emp_id] [int] NULL,
+  [deleted_on] [datetime] NULL,
+  [deleted] [bit] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [date_created] [smalldatetime] NULL,
+  [client_id] [int] NULL,
+  [clientimage_id] [int] NULL
 )
 ON [PRIMARY]
 GO

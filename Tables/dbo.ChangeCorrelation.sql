@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ChangeCorrelation] (
-  [Id] [int] NOT NULL,
-  [CorrelationId] [uniqueidentifier] NOT NULL,
-  [ChangeLogId] [int] NOT NULL
+  [CorrelationId] [uniqueidentifier] NULL,
+  [ChangeLogId] [int] NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

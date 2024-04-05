@@ -1,19 +1,19 @@
 ﻿CREATE TABLE [dbo].[labs_report_procedure] (
-  [Test_Type] [varchar](50) NOT NULL,
-  [Status] [varchar](50) NOT NULL,
-  [Specimen_Source] [varchar](200) NOT NULL,
-  [Specimen_Condition] [varchar](200) NOT NULL,
-  [Result_Date] [datetime] NOT NULL,
-  [Report_Test_ID] [int] NOT NULL,
-  [Report_Procedure_ID] [int] NOT NULL,
-  [Report_Accession_ID] [int] NOT NULL,
-  [Received_Date] [datetime] NOT NULL,
-  [Facility_ID] [int] NOT NULL,
-  [Collection_Volume] [varchar](50) NOT NULL,
-  [Collection_Date] [datetime] NOT NULL,
-  [CC_Clinician] [varchar](500) NOT NULL,
-  [Additional_Info] [varchar](500) NOT NULL,
-  [Action_Code] [varchar](50) NOT NULL
+  [Test_Type] [varchar](50) NULL,
+  [Specimen_Condition] [varchar](200) NULL,
+  [Specimen_Source] [varchar](200) NULL,
+  [Collection_Volume] [varchar](50) NULL,
+  [Action_Code] [varchar](50) NULL,
+  [Status] [varchar](50) NULL,
+  [Additional_Info] [varchar](500) NULL,
+  [CC_Clinician] [varchar](500) NULL,
+  [Result_Date] [datetime] NULL,
+  [Received_Date] [datetime] NULL,
+  [Collection_Date] [datetime] NULL,
+  [Report_Test_ID] [int] NULL,
+  [Facility_ID] [int] NULL,
+  [Report_Accession_ID] [int] NULL,
+  [Report_Procedure_ID] [int] NULL
 )
 ON [PRIMARY]
 GO

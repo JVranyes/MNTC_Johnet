@@ -1,17 +1,18 @@
 ﻿CREATE TABLE [dbo].[ClientNavigation] (
-  [use_in_intake] [bit] NOT NULL,
-  [url] [varchar](150) NOT NULL,
-  [title] [varchar](50) NOT NULL,
-  [nav_order] [tinyint] NOT NULL,
-  [jscript] [bit] NOT NULL,
-  [is_vendorportalnav] [char](1) NOT NULL,
-  [is_reportnav] [bit] NOT NULL,
-  [is_empnav] [bit] NOT NULL,
-  [is_clientusernav] [bit] NOT NULL,
-  [intake_order] [tinyint] NOT NULL,
-  [image] [varchar](150) NOT NULL,
-  [clientnavigation_id] [int] NOT NULL,
-  [alternate_intake_url] [varchar](150) NOT NULL
+  [is_vendorportalnav] [char](1) NULL,
+  [is_reportnav] [bit] NULL,
+  [alternate_intake_url] [varchar](150) NULL,
+  [use_in_intake] [bit] NULL,
+  [intake_order] [tinyint] NULL,
+  [in_intake] [bit] NULL,
+  [is_clientusernav] [bit] NULL,
+  [is_empnav] [bit] NULL,
+  [image] [varchar](150) NULL,
+  [jscript] [bit] NULL,
+  [url] [varchar](150) NULL,
+  [nav_order] [tinyint] NULL,
+  [title] [varchar](50) NULL,
+  [clientnavigation_id] [int] NULL
 )
 ON [PRIMARY]
 GO

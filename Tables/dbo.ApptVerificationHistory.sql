@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ApptVerificationHistory] (
-  [UpdatedDate] [datetime2] NOT NULL,
-  [Status] [nchar](150) NOT NULL,
-  [ShowForTelevox] [bit] NOT NULL,
-  [PlanId] [int] NOT NULL,
-  [Description] [varchar](500) NOT NULL,
-  [ApptVerificationHistoryId] [int] NOT NULL
+  [ShowForTelevox] [bit] NULL,
+  [Description] [varchar](500) NULL,
+  [UpdatedDate] [datetime2] NULL,
+  [Status] [nchar](150) NULL,
+  [PlanId] [int] NULL,
+  [ApptVerificationHistoryId] [int] NULL
 )
 ON [PRIMARY]
 GO

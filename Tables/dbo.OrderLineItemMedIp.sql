@@ -1,19 +1,19 @@
 ﻿CREATE TABLE [dbo].[OrderLineItemMedIp] (
-  [Status] [varchar](50) NOT NULL,
-  [StartDate] [datetime] NOT NULL,
-  [SigType] [varchar](20) NOT NULL,
-  [SigMaxDoses] [int] NOT NULL,
-  [SigFrequencyValue] [int] NOT NULL,
-  [SigFrequencyUnit] [varchar](20) NOT NULL,
-  [SigDays] [varchar](30) NOT NULL,
-  [SigCodeName] [varchar](20) NOT NULL,
-  [OrderLineItemMedIpId] [int] NOT NULL,
-  [OrderId] [int] NOT NULL,
-  [MessageControlId] [varchar](20) NOT NULL,
-  [MedId] [int] NOT NULL,
-  [InternalPharmacyCode] [varchar](20) NOT NULL,
-  [EpisodeId] [int] NOT NULL,
-  [EndDate] [datetime] NOT NULL
+  [EpisodeId] [int] NULL,
+  [SigType] [varchar](20) NULL,
+  [SigFrequencyUnit] [varchar](20) NULL,
+  [SigFrequencyValue] [int] NULL,
+  [SigMaxDoses] [int] NULL,
+  [SigDays] [varchar](30) NULL,
+  [EndDate] [datetime] NULL,
+  [StartDate] [datetime] NULL,
+  [Status] [varchar](50) NULL,
+  [MessageControlId] [varchar](20) NULL,
+  [MedId] [int] NULL,
+  [SigCodeName] [varchar](20) NULL,
+  [InternalPharmacyCode] [varchar](20) NULL,
+  [OrderId] [int] NULL,
+  [OrderLineItemMedIpId] [int] NULL
 )
 ON [PRIMARY]
 GO

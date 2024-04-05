@@ -1,15 +1,15 @@
 ﻿CREATE TABLE [dbo].[BulkClientVisitReportsOffline_Sigs] (
-  [title] [varchar](100) NOT NULL,
-  [signature_datetime] [datetime] NOT NULL,
-  [sigexists] [bit] NOT NULL,
-  [sig_id] [int] NOT NULL,
-  [report_id] [int] NOT NULL,
-  [print_name] [varchar](240) NOT NULL,
-  [ord] [int] NOT NULL,
-  [emp_name] [varchar](240) NOT NULL,
-  [emp_id] [int] NOT NULL,
-  [cvs_emp_id] [int] NOT NULL,
-  [credentials] [varchar](100) NOT NULL
+  [cvs_emp_id] [int] NULL,
+  [report_id] [int] NULL,
+  [emp_id] [int] NULL,
+  [title] [varchar](100) NULL,
+  [credentials] [varchar](100) NULL,
+  [emp_name] [varchar](240) NULL,
+  [sigexists] [bit] NULL,
+  [print_name] [varchar](240) NULL,
+  [signature_datetime] [datetime] NULL,
+  [ord] [int] NULL,
+  [sig_id] [int] NULL
 )
 ON [PRIMARY]
 GO

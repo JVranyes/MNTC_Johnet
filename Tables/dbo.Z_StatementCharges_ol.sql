@@ -1,16 +1,16 @@
 ﻿CREATE TABLE [dbo].[Z_StatementCharges_ol] (
-  [visitType] [int] NOT NULL,
-  [visitDesc] [varchar](100) NOT NULL,
-  [statementCharge_id] [int] NOT NULL,
-  [statement_id] [int] NOT NULL,
-  [service_date] [date] NOT NULL,
-  [insPay] [decimal] NOT NULL,
-  [insDue] [decimal] NOT NULL,
-  [dueAmount] [decimal] NOT NULL,
-  [discount] [decimal] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [clientPay] [decimal] NOT NULL,
-  [chargeAmount] [decimal] NOT NULL
+  [insDue] [decimal] NULL,
+  [statement_id] [int] NULL,
+  [dueAmount] [decimal] NULL,
+  [clientPay] [decimal] NULL,
+  [insPay] [decimal] NULL,
+  [discount] [decimal] NULL,
+  [chargeAmount] [decimal] NULL,
+  [visitDesc] [varchar](100) NULL,
+  [visitType] [int] NULL,
+  [service_date] [date] NULL,
+  [clientvisit_id] [int] NULL,
+  [statementCharge_id] [int] NULL
 )
 ON [PRIMARY]
 GO

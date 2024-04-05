@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[CustomRedXPayers] (
-  [payer_id] [smallint] NOT NULL,
-  [customredx_id] [smallint] NOT NULL
+  [payer_id] [smallint] NULL,
+  [customredx_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

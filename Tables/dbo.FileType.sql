@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[FileType] (
-  [is_inline] [bit] NOT NULL,
-  [icon] [varchar](50) NOT NULL,
-  [filetype_id] [int] NOT NULL,
-  [filetype_desc] [varchar](50) NOT NULL,
-  [content_type] [varchar](50) NOT NULL
+  [is_inline] [bit] NULL,
+  [content_type] [varchar](50) NULL,
+  [icon] [varchar](50) NULL,
+  [filetype] [varchar](4) NULL,
+  [filetype_desc] [varchar](50) NULL,
+  [filetype_id] [int] NULL
 )
 ON [PRIMARY]
 GO

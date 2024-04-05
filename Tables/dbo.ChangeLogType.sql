@@ -1,14 +1,14 @@
 ﻿CREATE TABLE [dbo].[ChangeLogType] (
-  [record_type] [varchar](50) NOT NULL,
-  [primarykey_name] [varchar](50) NOT NULL,
-  [is_visit] [bit] NOT NULL,
-  [is_emp] [bit] NOT NULL,
-  [is_client] [bit] NOT NULL,
-  [has_details] [bit] NOT NULL,
-  [description] [varchar](70) NOT NULL,
-  [changelogtype_id] [smallint] NOT NULL,
-  [category_id] [smallint] NOT NULL,
-  [action] [varchar](70) NOT NULL
+  [category_id] [smallint] NULL,
+  [has_details] [bit] NULL,
+  [is_emp] [bit] NULL,
+  [is_visit] [bit] NULL,
+  [is_client] [bit] NULL,
+  [primarykey_name] [varchar](50) NULL,
+  [record_type] [varchar](50) NULL,
+  [description] [varchar](70) NULL,
+  [action] [varchar](70) NULL,
+  [changelogtype_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

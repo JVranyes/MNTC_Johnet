@@ -1,14 +1,15 @@
 ﻿CREATE TABLE [dbo].[ChangeLog] (
-  [record_id] [int] NOT NULL,
-  [is_clientuser] [bit] NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL,
-  [changelogtype_id] [smallint] NOT NULL,
-  [changelog_id] [int] NOT NULL,
-  [change_date_utc] [datetime] NOT NULL,
-  [by_emp_id] [smallint] NOT NULL,
-  [alter_date] [datetime] NOT NULL
+  [alter_date] [datetime] NULL,
+  [change_date_utc] [datetime] NULL,
+  [is_clientuser] [bit] NULL,
+  [change_date] [datetime] NULL,
+  [emp_id] [smallint] NULL,
+  [clientvisit_id] [int] NULL,
+  [client_id] [int] NULL,
+  [record_id] [int] NULL,
+  [changelogtype_id] [smallint] NULL,
+  [by_emp_id] [smallint] NULL,
+  [changelog_id] [int] NULL
 )
 ON [PRIMARY]
 GO

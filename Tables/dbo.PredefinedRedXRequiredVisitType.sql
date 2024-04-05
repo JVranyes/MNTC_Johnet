@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[PredefinedRedXRequiredVisitType] (
-  [visittype_id] [smallint] NOT NULL,
-  [predefinedredxrequiredvisittype_id] [smallint] NOT NULL,
-  [predefinedredxrequirednumberofvisits_id] [smallint] NOT NULL
+  [visittype_id] [smallint] NULL,
+  [predefinedredxrequirednumberofvisits_id] [smallint] NULL,
+  [predefinedredxrequiredvisittype_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[LULiabilitySuppressPrintReason] (
-  [NAME] [varchar](50) NOT NULL,
-  [ID] [smallint] NOT NULL
+  [NAME] [varchar](50) NULL,
+  [ID] [smallint] NULL
 )
 ON [PRIMARY]
 GO

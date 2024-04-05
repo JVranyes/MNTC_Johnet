@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[TeamProgram] (
-  [team_id] [smallint] NOT NULL,
-  [program_id] [smallint] NOT NULL,
-  [primary_flag] [bit] NOT NULL
+  [primary_flag] [bit] NULL,
+  [program_id] [smallint] NULL,
+  [team_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

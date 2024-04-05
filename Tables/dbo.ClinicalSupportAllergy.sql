@@ -1,7 +1,8 @@
 ﻿CREATE TABLE [dbo].[ClinicalSupportAllergy] (
-  [clinicalsupportallergy_id] [int] NOT NULL,
-  [clinicalsupport_id] [int] NOT NULL,
-  [allergy_type] [int] NOT NULL
+  [allergy_type] [int] NULL,
+  [allergy_id] [int] NULL,
+  [clinicalsupport_id] [int] NULL,
+  [clinicalsupportallergy_id] [int] NULL
 )
 ON [PRIMARY]
 GO

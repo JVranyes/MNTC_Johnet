@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[NotificationEventClinic] (
-  [PartnerDomain] [varchar](15) NOT NULL,
-  [NotificationEventId] [int] NOT NULL,
-  [ClinicId] [int] NOT NULL
+  [NotificationEventId] [int] NULL,
+  [PartnerDomain] [varchar](15) NULL,
+  [ClinicId] [int] NULL
 )
 ON [PRIMARY]
 GO

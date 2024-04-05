@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[OrderCounterSign] (
-  [signed] [bit] NOT NULL,
-  [sign_date] [datetime] NOT NULL,
-  [sign_by] [smallint] NOT NULL,
-  [orderlineitem_id] [int] NOT NULL,
-  [ordercountersign_id] [int] NOT NULL
+  [sign_date] [datetime] NULL,
+  [sign_by] [smallint] NULL,
+  [signed] [bit] NULL,
+  [orderlineitem_id] [int] NULL,
+  [ordercountersign_id] [int] NULL
 )
 ON [PRIMARY]
 GO

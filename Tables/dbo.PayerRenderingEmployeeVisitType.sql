@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[PayerRenderingEmployeeVisitType] (
-  [visittype_id] [smallint] NOT NULL,
-  [payerrenderingemployeevisittype_id] [int] NOT NULL,
-  [payer_plantype_id] [int] NOT NULL,
-  [payer_id] [smallint] NOT NULL
+  [payer_plantype_id] [int] NULL,
+  [visittype_id] [smallint] NULL,
+  [payer_id] [smallint] NULL,
+  [payerrenderingemployeevisittype_id] [int] NULL
 )
 ON [PRIMARY]
 GO

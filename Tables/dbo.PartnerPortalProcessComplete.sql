@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[PartnerPortalProcessComplete] (
-  [SqlExecDate] [datetime] NOT NULL,
-  [source] [varchar](10) NOT NULL,
-  [RecordCount] [int] NOT NULL,
-  [PartnerPortalProcessComplete_id] [int] NOT NULL,
-  [externalOriginHL7Owner_ID] [int] NOT NULL,
-  [exchangeType] [varchar](10) NOT NULL,
-  [batch_id] [int] NOT NULL
+  [exchangeType] [varchar](10) NULL,
+  [externalOriginHL7Owner_ID] [int] NULL,
+  [batch_id] [int] NULL,
+  [source] [varchar](10) NULL,
+  [SqlExecDate] [datetime] NULL,
+  [RecordCount] [int] NULL,
+  [PartnerPortalProcessComplete_id] [int] NULL
 )
 ON [PRIMARY]
 GO

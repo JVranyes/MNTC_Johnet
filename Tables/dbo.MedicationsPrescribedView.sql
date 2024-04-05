@@ -1,12 +1,13 @@
 ﻿CREATE TABLE [dbo].[MedicationsPrescribedView] (
-  [start_date] [smalldatetime] NOT NULL,
-  [seqnum] [bigint] NOT NULL,
-  [rx_status] [varchar](150) NOT NULL,
-  [provider_id_int] [smallint] NOT NULL,
-  [medication] [varchar](300) NOT NULL,
-  [med_id] [int] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [client_id] [int] NOT NULL
+  [seqnum] [bigint] NULL,
+  [start_date] [smalldatetime] NULL,
+  [provider_id] [smallint] NULL,
+  [provider_id_int] [smallint] NULL,
+  [client_id] [int] NULL,
+  [medication] [varchar](300) NULL,
+  [date_created] [datetime] NULL,
+  [rx_status] [varchar](150) NULL,
+  [med_id] [int] NULL
 )
 ON [PRIMARY]
 GO

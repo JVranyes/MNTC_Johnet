@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[MassHiwayCansVisit] (
-  [Submitted] [bit] NOT NULL,
-  [MassHiwayCansVisitId] [int] NOT NULL,
-  [DateUpdatedUtc] [datetime] NOT NULL,
-  [DateSubmittedUtc] [datetime] NOT NULL,
-  [DateCreatedUtc] [datetime] NOT NULL,
-  [ClientVisitId] [int] NOT NULL
+  [Submitted] [bit] NULL,
+  [DateSubmittedUtc] [datetime] NULL,
+  [DateUpdatedUtc] [datetime] NULL,
+  [DateCreatedUtc] [datetime] NULL,
+  [ClientVisitId] [int] NULL,
+  [MassHiwayCansVisitId] [int] NULL
 )
 ON [PRIMARY]
 GO

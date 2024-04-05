@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Labs_ELabOrderTestGroup] (
-  [TestGroupId] [int] NOT NULL,
-  [ELabLineItemId] [int] NOT NULL
+  [TestGroupId] [int] NULL,
+  [ELabLineItemId] [int] NULL
 )
 ON [PRIMARY]
 GO

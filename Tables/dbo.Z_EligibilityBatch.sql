@@ -1,19 +1,20 @@
 ﻿CREATE TABLE [dbo].[Z_EligibilityBatch] (
-  [transactionType] [varchar](50) NOT NULL,
-  [transactionSource] [varchar](50) NOT NULL,
-  [transactionCode] [varchar](50) NOT NULL,
-  [total_requests] [int] NOT NULL,
-  [status] [varchar](12) NOT NULL,
-  [scheduled_flag] [bit] NOT NULL,
-  [payer_id] [smallint] NOT NULL,
-  [min_plan_date] [smalldatetime] NOT NULL,
-  [max_plan_date] [smalldatetime] NOT NULL,
-  [is_rx] [bit] NOT NULL,
-  [is_5010] [bit] NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [eligibilitybatch_id] [int] NOT NULL,
-  [date_batched_utc] [datetime] NOT NULL,
-  [config_id] [smallint] NOT NULL
+  [date_batched_utc] [datetime] NULL,
+  [transactionCode] [varchar](50) NULL,
+  [transactionType] [varchar](50) NULL,
+  [transactionSource] [varchar](50) NULL,
+  [is_rx] [bit] NULL,
+  [is_5010] [bit] NULL,
+  [scheduled_flag] [bit] NULL,
+  [config_id] [smallint] NULL,
+  [payer_id] [smallint] NULL,
+  [max_plan_date] [smalldatetime] NULL,
+  [min_plan_date] [smalldatetime] NULL,
+  [status] [varchar](12) NULL,
+  [date_batched] [smalldatetime] NULL,
+  [total_requests] [int] NULL,
+  [emp_id] [smallint] NULL,
+  [eligibilitybatch_id] [int] NULL
 )
 ON [PRIMARY]
 GO

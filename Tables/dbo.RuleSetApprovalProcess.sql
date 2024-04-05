@@ -1,15 +1,15 @@
 ﻿CREATE TABLE [dbo].[RuleSetApprovalProcess] (
-  [ruleSetApprovalProcess_id] [int] NOT NULL,
-  [ruleSet_id] [int] NOT NULL,
-  [role] [nvarchar](55) NOT NULL,
-  [requirePrevious] [bit] NOT NULL,
-  [reapprovalOnEdit] [bit] NOT NULL,
-  [name_id] [int] NOT NULL,
-  [displayOrder] [smallint] NOT NULL,
-  [createdDated] [datetime] NOT NULL,
-  [createdByEmp_id] [int] NOT NULL,
-  [clientSignatureRequired] [bit] NOT NULL,
-  [allowDocumentation] [bit] NOT NULL
+  [createdByEmp_id] [int] NULL,
+  [createdDated] [datetime] NULL,
+  [displayOrder] [smallint] NULL,
+  [requirePrevious] [bit] NULL,
+  [allowDocumentation] [bit] NULL,
+  [reapprovalOnEdit] [bit] NULL,
+  [clientSignatureRequired] [bit] NULL,
+  [name_id] [int] NULL,
+  [role] [nvarchar](55) NULL,
+  [int] [int] NULL,
+  [ruleSetApprovalProcess_id] [int] NULL
 )
 ON [PRIMARY]
 GO

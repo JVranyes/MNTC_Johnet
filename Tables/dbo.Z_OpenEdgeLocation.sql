@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Z_OpenEdgeLocation] (
-  [paymentlocation_id] [int] NOT NULL,
-  [openedgelocation_id] [int] NOT NULL,
-  [account_token] [nvarchar](255) NOT NULL
+  [account_token] [nvarchar](255) NULL,
+  [paymentlocation_id] [int] NULL,
+  [openedgelocation_id] [int] NULL
 )
 ON [PRIMARY]
 GO

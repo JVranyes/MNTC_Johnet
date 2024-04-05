@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[ConversionStep] (
-  [sortorder] [int] NOT NULL,
-  [hl7owner_id] [int] NOT NULL,
-  [conversionstep_id] [int] NOT NULL,
-  [conversionaction_id] [int] NOT NULL
+  [sortorder] [int] NULL,
+  [hl7owner_id] [int] NULL,
+  [conversionaction_id] [int] NULL,
+  [conversionstep_id] [int] NULL
 )
 ON [PRIMARY]
 GO

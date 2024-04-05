@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[VisitTypeGroupVisitType] (
-  [visittypegroupvisittype_id] [smallint] NOT NULL,
-  [visittypegroup_id] [smallint] NOT NULL,
-  [updatedby_emp_id] [int] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [date_updated] [smalldatetime] NULL,
+  [updatedby_emp_id] [int] NULL,
+  [visittype_id] [smallint] NULL,
+  [visittypegroup_id] [smallint] NULL,
+  [visittypegroupvisittype_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

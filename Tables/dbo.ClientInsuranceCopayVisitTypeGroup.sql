@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ClientInsuranceCopayVisitTypeGroup] (
-  [visittypegroup_id] [int] NOT NULL,
-  [clientinsurancecopay_id] [int] NOT NULL
+  [visittypegroup_id] [int] NULL,
+  [clientinsurancecopay_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[QcBenefits] (
-  [QcBenefitId] [int] NOT NULL,
-  [QcBenefitDescription] [nvarchar](300) NOT NULL
+  [QcBenefitDescription] [nvarchar](300) NULL,
+  [QcBenefitId] [int] NULL
 )
 ON [PRIMARY]
 GO

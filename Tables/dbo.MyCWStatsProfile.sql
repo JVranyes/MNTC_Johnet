@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[MyCWStatsProfile] (
-  [updated_date] [smalldatetime] NOT NULL,
-  [profile_code] [varchar](12) NOT NULL,
-  [mycwstatsprofile_id] [int] NOT NULL,
-  [mycwstats_id] [int] NOT NULL
+  [updated_date] [smalldatetime] NULL,
+  [profile_code] [varchar](12) NULL,
+  [mycwstats_id] [int] NULL,
+  [mycwstatsprofile_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[EligibilityInfo] (
-  [client_id] [int] NOT NULL,
-  [active_coverage] [varchar](3) NOT NULL
+  [active_coverage] [varchar](3) NULL,
+  [client_id] [int] NULL
 )
 ON [PRIMARY]
 GO

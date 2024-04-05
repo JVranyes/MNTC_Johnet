@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[FileNames] (
-  [updated_by] [smallint] NOT NULL,
-  [filename_id] [int] NOT NULL,
-  [filefor] [char](1) NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL
+  [updated_by] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [date_created] [smalldatetime] NULL,
+  [filefor] [char](1) NULL,
+  [filename] [varchar](50) NULL,
+  [filename_id] [int] NULL
 )
 ON [PRIMARY]
 GO

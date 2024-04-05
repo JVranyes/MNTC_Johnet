@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[PartnerConfig] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [partnerconfig_id] [int] NOT NULL,
-  [parameter] [varchar](40) NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [parameter] [varchar](40) NULL,
+  [partnerconfig_id] [int] NULL
 )
 ON [PRIMARY]
 GO

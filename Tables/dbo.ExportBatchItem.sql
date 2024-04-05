@@ -1,12 +1,13 @@
 ﻿CREATE TABLE [dbo].[ExportBatchItem] (
-  [text2] [nvarchar](200) NOT NULL,
-  [text1] [nvarchar](200) NOT NULL,
-  [recordtype] [char](1) NOT NULL,
-  [is_deleted] [bit] NOT NULL,
-  [fk_id] [bigint] NOT NULL,
-  [exportbuilder_id] [smallint] NOT NULL,
-  [exportbatch_id] [int] NOT NULL,
-  [decimalval2] [decimal] NOT NULL
+  [text2] [nvarchar](200) NULL,
+  [text1] [nvarchar](200) NULL,
+  [is_deleted] [bit] NULL,
+  [decimalval2] [decimal] NULL,
+  [decimalval] [decimal] NULL,
+  [recordtype] [char](1) NULL,
+  [fk_id] [bigint] NULL,
+  [exportbatch_id] [int] NULL,
+  [exportbuilder_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

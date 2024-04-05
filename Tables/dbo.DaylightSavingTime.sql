@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[DaylightSavingTime] (
-  [year] [int] NOT NULL,
-  [start] [datetime] NOT NULL,
-  [end] [datetime] NOT NULL
+  [end] [datetime] NULL,
+  [start] [datetime] NULL,
+  [year] [int] NULL
 )
 ON [PRIMARY]
 GO

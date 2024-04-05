@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[SavedVisitMapping] (
-  [question_id] [int] NOT NULL,
-  [is_external_id] [bit] NOT NULL,
-  [failure_log] [varchar](500) NOT NULL,
-  [data_dict_id] [smallint] NOT NULL,
-  [completed] [bit] NOT NULL,
-  [clientvisit_id] [int] NOT NULL
+  [failure_log] [varchar](500) NULL,
+  [completed] [bit] NULL,
+  [is_external_id] [bit] NULL,
+  [data_dict_id] [smallint] NULL,
+  [question_id] [int] NULL,
+  [clientvisit_id] [int] NULL
 )
 ON [PRIMARY]
 GO

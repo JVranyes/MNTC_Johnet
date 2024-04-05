@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Labs_SendType] (
-  [SendTypeId] [int] NOT NULL,
-  [Description] [varchar](50) NOT NULL
+  [Description] [varchar](50) NULL,
+  [SendTypeId] [int] NULL
 )
 ON [PRIMARY]
 GO

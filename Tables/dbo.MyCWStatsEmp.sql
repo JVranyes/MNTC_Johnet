@@ -1,10 +1,11 @@
 ﻿CREATE TABLE [dbo].[MyCWStatsEmp] (
-  [updated_by] [smallint] NOT NULL,
-  [profile_code] [varchar](12) NOT NULL,
-  [mycwstatsemp_id] [int] NOT NULL,
-  [mycwstats_id] [int] NOT NULL,
-  [is_dashboardstat] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [updated_by] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [is_dashboardstat] [bit] NULL,
+  [profile_code] [varchar](12) NULL,
+  [emp_id] [smallint] NULL,
+  [mycwstats_id] [int] NULL,
+  [mycwstatsemp_id] [int] NULL
 )
 ON [PRIMARY]
 GO

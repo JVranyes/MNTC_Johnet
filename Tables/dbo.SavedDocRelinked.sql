@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[SavedDocRelinked] (
-  [emp_id] [smallint] NOT NULL,
-  [doc_id] [int] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_moved] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [client_movedto] [int] NOT NULL,
-  [client_movedfrom] [int] NOT NULL
+  [date_moved] [datetime] NULL,
+  [client_movedto] [int] NULL,
+  [client_movedfrom] [int] NULL,
+  [emp_id] [smallint] NULL,
+  [date_updated] [datetime] NULL,
+  [date_created] [datetime] NULL,
+  [clientvisit_id] [int] NULL,
+  [doc_id] [int] NULL
 )
 ON [PRIMARY]
 GO

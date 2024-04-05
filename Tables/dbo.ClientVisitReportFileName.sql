@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ClientVisitReportFileName] (
-  [report_id] [int] NOT NULL,
-  [pdf_file_name] [varchar](250) NOT NULL,
-  [ClientVisitReportId] [int] NOT NULL
+  [pdf_file_name] [varchar](250) NULL,
+  [report_id] [int] NULL,
+  [ClientVisitReportId] [int] NULL
 )
 ON [PRIMARY]
 GO

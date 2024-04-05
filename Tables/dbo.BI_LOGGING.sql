@@ -1,11 +1,12 @@
 ﻿CREATE TABLE [dbo].[BI_LOGGING] (
-  [username] [nvarchar](716) NOT NULL,
-  [SessionId] [nvarchar](256) NOT NULL,
-  [PartnerID] [int] NOT NULL,
-  [EventTypeCode] [nvarchar](40) NOT NULL,
-  [eventTime_GMT] [datetime] NOT NULL,
-  [EventId] [int] NOT NULL,
-  [EventCode] [nvarchar](40) NOT NULL
+  [EventCode] [nvarchar](40) NULL,
+  [EventTypeCode] [nvarchar](40) NULL,
+  [SessionId] [nvarchar](256) NULL,
+  [username] [nvarchar](716) NULL,
+  [eventTime_GMT] [datetime] NULL,
+  [PartnerID] [int] NULL,
+  [partner] [nvarchar](256) NULL,
+  [EventId] [int] NULL
 )
 ON [PRIMARY]
 GO

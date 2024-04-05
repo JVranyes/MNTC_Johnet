@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[TimeClock] (
-  [stime] [datetime] NOT NULL,
-  [short_time] [varchar](10) NOT NULL,
-  [itime] [int] NOT NULL,
-  [increments_60] [bit] NOT NULL,
-  [increments_15] [bit] NOT NULL,
-  [ihour] [int] NOT NULL,
-  [duration] [varchar](8) NOT NULL
+  [ihour] [int] NULL,
+  [increments_60] [bit] NULL,
+  [duration] [varchar](8) NULL,
+  [increments_15] [bit] NULL,
+  [short_time] [varchar](10) NULL,
+  [itime] [int] NULL,
+  [stime] [datetime] NULL
 )
 ON [PRIMARY]
 GO

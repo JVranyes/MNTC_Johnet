@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[CustomWileyProblem] (
-  [txtype] [char](1) NOT NULL,
-  [sort_order] [int] NOT NULL,
-  [short_desc] [varchar](100) NOT NULL,
-  [ProblemNumber] [int] NOT NULL,
-  [partner_id] [int] NOT NULL,
-  [GroupID] [int] NOT NULL
+  [sort_order] [int] NULL,
+  [txtype] [char](1) NULL,
+  [partner_id] [int] NULL,
+  [short_desc] [varchar](100) NULL,
+  [ProblemNumber] [int] NULL,
+  [GroupID] [int] NULL
 )
 ON [PRIMARY]
 GO

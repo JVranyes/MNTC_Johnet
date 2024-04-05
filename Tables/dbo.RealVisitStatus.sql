@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [dbo].[RealVisitStatus] (
-  [visitstatus_id] [int] NOT NULL
+  [visitstatus] [varchar](15) NULL,
+  [visitstatus_id] [int] NULL
 )
 ON [PRIMARY]
 GO

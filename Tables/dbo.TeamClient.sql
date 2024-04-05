@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[TeamClient] (
-  [team_id] [smallint] NOT NULL,
-  [primary_flag] [bit] NOT NULL,
-  [client_id] [int] NOT NULL
+  [primary_flag] [bit] NULL,
+  [client_id] [int] NULL,
+  [team_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

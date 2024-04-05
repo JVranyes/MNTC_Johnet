@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[PdmpProfile] (
-  [Role] [int] NOT NULL,
-  [ModifiedOn] [datetime] NOT NULL,
-  [ModifiedBy] [smallint] NOT NULL,
-  [IsActive] [bit] NOT NULL,
-  [EmployeeId] [smallint] NOT NULL,
-  [CreatedOn] [datetime] NOT NULL,
-  [CreatedBy] [smallint] NOT NULL
+  [ModifiedBy] [smallint] NULL,
+  [ModifiedOn] [datetime] NULL,
+  [CreatedBy] [smallint] NULL,
+  [CreatedOn] [datetime] NULL,
+  [IsActive] [bit] NULL,
+  [Role] [int] NULL,
+  [EmployeeId] [smallint] NULL
 )
 ON [PRIMARY]
 GO

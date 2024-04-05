@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ClientVisitTypeGroup] (
-  [visittypegroup_id] [smallint] NOT NULL,
-  [txplus_id] [int] NOT NULL,
-  [tx_id] [int] NOT NULL,
-  [credibleplan_id] [int] NOT NULL,
-  [clientvisittypegroup_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL
+  [credibleplan_id] [int] NULL,
+  [txplus_id] [int] NULL,
+  [tx_id] [int] NULL,
+  [visittypegroup_id] [smallint] NULL,
+  [client_id] [int] NULL,
+  [clientvisittypegroup_id] [int] NULL
 )
 ON [PRIMARY]
 GO

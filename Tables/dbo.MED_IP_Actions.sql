@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[MED_IP_Actions] (
-  [description] [varchar](50) NOT NULL,
-  [action_id] [int] NOT NULL
+  [description] [varchar](50) NULL,
+  [action_id] [int] NULL
 )
 ON [PRIMARY]
 GO

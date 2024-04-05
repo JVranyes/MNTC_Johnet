@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[EmarConfig] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [parameter] [varchar](40) NOT NULL,
-  [emarconfig_id] [int] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [parameter] [varchar](40) NULL,
+  [emarconfig_id] [int] NULL
 )
 ON [PRIMARY]
 GO

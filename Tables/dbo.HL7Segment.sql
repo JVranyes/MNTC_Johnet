@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[HL7Segment] (
-  [segmentcode] [char](5) NOT NULL,
-  [segment_id] [smallint] NOT NULL,
-  [description] [varchar](250) NOT NULL
+  [description] [varchar](250) NULL,
+  [segmentcode] [char](5) NULL,
+  [segment_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

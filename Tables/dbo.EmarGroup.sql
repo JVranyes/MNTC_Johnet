@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[EmarGroup] (
-  [updated_by_emp_id] [int] NOT NULL,
-  [group_name] [varchar](50) NOT NULL,
-  [group_id] [smallint] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [added_by_emp_id] [int] NOT NULL
+  [deleted] [bit] NULL,
+  [updated_by_emp_id] [int] NULL,
+  [added_by_emp_id] [int] NULL,
+  [date_created] [datetime] NULL,
+  [group_name] [varchar](50) NULL,
+  [group_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

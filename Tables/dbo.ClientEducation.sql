@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ClientEducation] (
-  [language_code] [varchar](10) NOT NULL,
-  [font_size] [varchar](10) NOT NULL,
-  [client_id] [int] NOT NULL
+  [font_size] [varchar](10) NULL,
+  [language_code] [varchar](10) NULL,
+  [client_id] [int] NULL
 )
 ON [PRIMARY]
 GO

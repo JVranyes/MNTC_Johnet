@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[EmployeeStorage] (
-  [key] [varchar](255) NOT NULL,
-  [emp_id] [smallint] NOT NULL
+  [key] [varchar](255) NULL,
+  [emp_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

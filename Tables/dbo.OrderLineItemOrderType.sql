@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[OrderLineItemOrderType] (
-  [orderlineitem_id] [int] NOT NULL,
-  [order_type_id] [int] NOT NULL
+  [order_type_id] [int] NULL,
+  [orderlineitem_id] [int] NULL
 )
 ON [PRIMARY]
 GO

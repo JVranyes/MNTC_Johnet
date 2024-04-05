@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[LiabilityFeeDetail] (
-  [liabilityfee_id] [int] NOT NULL,
-  [liabilityfee_detail_id] [int] NOT NULL,
-  [income_amt] [decimal] NOT NULL,
-  [household_size] [int] NOT NULL,
-  [fee_amt] [decimal] NOT NULL
+  [fee_amt] [decimal] NULL,
+  [household_size] [int] NULL,
+  [income_amt] [decimal] NULL,
+  [liabilityfee_detail_id] [int] NULL,
+  [liabilityfee_id] [int] NULL
 )
 ON [PRIMARY]
 GO

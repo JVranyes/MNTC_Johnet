@@ -1,14 +1,15 @@
 ﻿CREATE TABLE [dbo].[ClientAccessKey] (
-  [UpdatedBy] [varchar](256) NOT NULL,
-  [SharedToEmail] [varchar](200) NOT NULL,
-  [RequestSource] [tinyint] NOT NULL,
-  [IsActive] [bit] NOT NULL,
-  [For] [varchar](100) NOT NULL,
-  [DateUpdatedUtc] [datetime2] NOT NULL,
-  [DateCreatedUtc] [datetime2] NOT NULL,
-  [CreatedBy] [varchar](256) NOT NULL,
-  [ClientId] [int] NOT NULL,
-  [ClientAccessKeyId] [int] NOT NULL
+  [DateUpdatedUtc] [datetime2] NULL,
+  [DateCreatedUtc] [datetime2] NULL,
+  [UpdatedBy] [varchar](256) NULL,
+  [CreatedBy] [varchar](256) NULL,
+  [IsActive] [bit] NULL,
+  [RequestSource] [tinyint] NULL,
+  [SharedToEmail] [varchar](200) NULL,
+  [For] [varchar](100) NULL,
+  [ClientId] [int] NULL,
+  [AccessKey] [uniqueidentifier] NULL,
+  [ClientAccessKeyId] [int] NULL
 )
 ON [PRIMARY]
 GO

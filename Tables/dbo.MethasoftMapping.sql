@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[MethasoftMapping] (
-  [methasoft_id] [varchar](50) NOT NULL,
-  [credible_emp_id] [smallint] NOT NULL
+  [methasoft_id] [varchar](50) NULL,
+  [credible_emp_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

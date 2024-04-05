@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[MCOPaymentBillingGroups] (
-  [payment_id] [int] NOT NULL,
-  [billing_group_id] [smallint] NOT NULL
+  [billing_group_id] [smallint] NULL,
+  [payment_id] [int] NULL
 )
 ON [PRIMARY]
 GO

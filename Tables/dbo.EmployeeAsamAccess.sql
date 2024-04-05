@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[EmployeeAsamAccess] (
-  [UpdatedBy] [smallint] NOT NULL,
-  [EmployeeId] [smallint] NOT NULL,
-  [DateUpdatedUtc] [datetime2] NOT NULL,
-  [DateDisabledUtc] [datetime2] NOT NULL,
-  [DateCreatedUtc] [datetime2] NOT NULL,
-  [DateActiveUtc] [datetime2] NOT NULL,
-  [CreatedBy] [smallint] NOT NULL
+  [DateUpdatedUtc] [datetime2] NULL,
+  [DateCreatedUtc] [datetime2] NULL,
+  [UpdatedBy] [smallint] NULL,
+  [CreatedBy] [smallint] NULL,
+  [DateDisabledUtc] [datetime2] NULL,
+  [DateActiveUtc] [datetime2] NULL,
+  [EmployeeId] [smallint] NULL
 )
 ON [PRIMARY]
 GO

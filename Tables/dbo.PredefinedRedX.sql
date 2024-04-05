@@ -1,16 +1,18 @@
 ﻿CREATE TABLE [dbo].[PredefinedRedX] (
-  [use_for_batching] [bit] NOT NULL,
-  [use_for_approval] [bit] NOT NULL,
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [redx_description] [varchar](250) NOT NULL,
-  [predefinedredx_id] [smallint] NOT NULL,
-  [number_of_days] [smallint] NOT NULL,
-  [has_visittypes] [bit] NOT NULL,
-  [has_recipienttypes] [bit] NOT NULL,
-  [has_programs] [bit] NOT NULL,
-  [has_payers] [bit] NOT NULL,
-  [has_credentials] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [number_of_days] [smallint] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [has_credentials] [bit] NULL,
+  [has_recipienttypes] [bit] NULL,
+  [has_programs] [bit] NULL,
+  [has_visittypes] [bit] NULL,
+  [has_payers] [bit] NULL,
+  [use_for_batching] [bit] NULL,
+  [use_for_approval] [bit] NULL,
+  [for_batching] [bit] NULL,
+  [for_approval] [bit] NULL,
+  [redx_description] [varchar](250) NULL,
+  [predefinedredx_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

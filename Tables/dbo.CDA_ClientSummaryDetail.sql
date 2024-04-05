@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[CDA_ClientSummaryDetail] (
-  [summary_id] [int] NOT NULL,
-  [source] [int] NOT NULL,
-  [reconciled_cda] [bit] NOT NULL,
-  [hl7_template_name] [varchar](50) NOT NULL,
-  [hl7_template_id] [varchar](50) NOT NULL
+  [reconciled_cda] [bit] NULL,
+  [source] [int] NULL,
+  [hl7_template_name] [varchar](50) NULL,
+  [hl7_template_id] [varchar](50) NULL,
+  [summary_id] [int] NULL
 )
 ON [PRIMARY]
 GO

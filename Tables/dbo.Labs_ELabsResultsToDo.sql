@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[Labs_ELabsResultsToDo] (
-  [ToDoListId] [int] NOT NULL,
-  [ReportAccessionId] [int] NOT NULL,
-  [OrderLineItemId] [int] NOT NULL,
-  [ExternalOrderId] [nvarchar](100) NOT NULL,
-  [ELabsResultsToDoId] [int] NOT NULL,
-  [ELabOrderTestId] [int] NOT NULL
+  [ELabOrderTestId] [int] NULL,
+  [ReportAccessionId] [int] NULL,
+  [ExternalOrderId] [nvarchar](100) NULL,
+  [OrderLineItemId] [int] NULL,
+  [ToDoListId] [int] NULL,
+  [ELabsResultsToDoId] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[ApprovalRole] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [is_cptemplate] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL,
-  [approvalrole_id] [smallint] NOT NULL
+  [is_cptemplate] [bit] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [date_created] [smalldatetime] NULL,
+  [approvalrole] [varchar](50) NULL,
+  [approvalrole_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

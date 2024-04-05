@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[Releases] (
-  [version] [char](4) NOT NULL,
-  [to_test] [datetime] NOT NULL,
-  [requirements_due] [datetime] NOT NULL,
-  [release_id] [int] NOT NULL,
-  [release_date] [datetime] NOT NULL,
-  [regression_testing] [datetime] NOT NULL,
-  [regression_release] [datetime] NOT NULL,
-  [actual_release_date] [datetime] NOT NULL
+  [regression_release] [datetime] NULL,
+  [actual_release_date] [datetime] NULL,
+  [regression_testing] [datetime] NULL,
+  [release_date] [datetime] NULL,
+  [to_test] [datetime] NULL,
+  [requirements_due] [datetime] NULL,
+  [version] [char](4) NULL,
+  [release_id] [int] NULL
 )
 ON [PRIMARY]
 GO

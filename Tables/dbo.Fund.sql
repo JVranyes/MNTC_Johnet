@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[Fund] (
-  [updated_by] [int] NOT NULL,
-  [fund_id] [int] NOT NULL,
-  [fund_desc] [varchar](250) NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [deleted] [bit] NULL,
+  [updated_by] [int] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [fund_desc] [varchar](250) NULL,
+  [fund] [varchar](50) NULL,
+  [fund_id] [int] NULL
 )
 ON [PRIMARY]
 GO

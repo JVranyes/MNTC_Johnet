@@ -1,16 +1,16 @@
 ﻿CREATE TABLE [dbo].[MedicationReconciliationVerification] (
-  [verificationId] [int] NOT NULL,
-  [status] [bit] NOT NULL,
-  [sourceId] [int] NOT NULL,
-  [parentId] [int] NOT NULL,
-  [modifiedOn] [datetime] NOT NULL,
-  [modifiedBy] [smallint] NOT NULL,
-  [medicationId] [int] NOT NULL,
-  [isVerified] [bit] NOT NULL,
-  [episodeId] [int] NOT NULL,
-  [createdOn] [datetime] NOT NULL,
-  [createdBy] [smallint] NOT NULL,
-  [clientId] [int] NOT NULL
+  [clientId] [int] NULL,
+  [modifiedBy] [smallint] NULL,
+  [modifiedOn] [datetime] NULL,
+  [createdBy] [smallint] NULL,
+  [createdOn] [datetime] NULL,
+  [isVerified] [bit] NULL,
+  [status] [bit] NULL,
+  [sourceId] [int] NULL,
+  [episodeId] [int] NULL,
+  [medicationId] [int] NULL,
+  [parentId] [int] NULL,
+  [verificationId] [int] NULL
 )
 ON [PRIMARY]
 GO

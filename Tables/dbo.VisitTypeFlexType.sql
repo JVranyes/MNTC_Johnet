@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[VisitTypeFlexType] (
-  [order] [tinyint] NOT NULL,
-  [name] [nvarchar](100) NOT NULL,
-  [flex_id] [char](1) NOT NULL
+  [order] [tinyint] NULL,
+  [name] [nvarchar](100) NULL,
+  [flex_id] [char](1) NULL
 )
 ON [PRIMARY]
 GO

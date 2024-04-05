@@ -1,21 +1,21 @@
 ﻿CREATE TABLE [dbo].[PlanType] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [snomed_fsn] [varchar](900) NOT NULL,
-  [snomed_cid] [bigint] NOT NULL,
-  [plantype_id] [int] NOT NULL,
-  [num_signatures] [tinyint] NOT NULL,
-  [long_common_name] [nvarchar](255) NOT NULL,
-  [loinc_num] [nvarchar](7) NOT NULL,
-  [label] [varchar](100) NOT NULL,
-  [external_id_3] [varchar](12) NOT NULL,
-  [external_id_2] [varchar](12) NOT NULL,
-  [external_id_1] [varchar](12) NOT NULL,
-  [external_code] [varchar](12) NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [createdby_emp_id] [smallint] NOT NULL,
-  [allow_signatures] [bit] NOT NULL
+  [date_updated] [datetime] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_created] [datetime] NULL,
+  [createdby_emp_id] [smallint] NULL,
+  [external_id_3] [varchar](12) NULL,
+  [external_id_2] [varchar](12) NULL,
+  [external_id_1] [varchar](12) NULL,
+  [deleted] [bit] NULL,
+  [external_code] [varchar](12) NULL,
+  [long_common_name] [nvarchar](255) NULL,
+  [loinc_num] [nvarchar](7) NULL,
+  [snomed_fsn] [varchar](900) NULL,
+  [snomed_cid] [bigint] NULL,
+  [num_signatures] [tinyint] NULL,
+  [allow_signatures] [bit] NULL,
+  [label] [varchar](100) NULL,
+  [plantype_id] [int] NULL
 )
 ON [PRIMARY]
 GO

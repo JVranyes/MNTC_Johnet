@@ -1,12 +1,13 @@
 ﻿CREATE TABLE [dbo].[RemittanceAdviceRemarkCodes] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [stop_date] [datetime] NOT NULL,
-  [start_date] [datetime] NOT NULL,
-  [remittance_code_id] [int] NOT NULL,
-  [notes] [varchar](255) NOT NULL,
-  [last_modified] [datetime] NOT NULL,
-  [is_redx] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [date_updated] [smalldatetime] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [is_redx] [bit] NULL,
+  [notes] [varchar](255) NULL,
+  [stop_date] [datetime] NULL,
+  [last_modified] [datetime] NULL,
+  [start_date] [datetime] NULL,
+  [remittance_code] [varchar](7) NULL,
+  [remittance_code_id] [int] NULL
 )
 ON [PRIMARY]
 GO

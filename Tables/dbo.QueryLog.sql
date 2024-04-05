@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[QueryLog] (
-  [timespan] [int] NOT NULL,
-  [query] [varchar](255) NOT NULL,
-  [partner] [varchar](50) NOT NULL,
-  [date_created] [datetime] NOT NULL
+  [date_created] [datetime] NULL,
+  [partner] [varchar](50) NULL,
+  [timespan] [int] NULL,
+  [query] [varchar](255) NULL
 )
 ON [PRIMARY]
 GO

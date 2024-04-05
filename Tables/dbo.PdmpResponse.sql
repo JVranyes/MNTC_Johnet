@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[PdmpResponse] (
-  [Id] [bigint] NOT NULL,
-  [HasError] [bit] NOT NULL,
-  [EmployeeId] [smallint] NOT NULL,
-  [CreatedOn] [datetime] NOT NULL,
-  [CreatedBy] [smallint] NOT NULL,
-  [ClientId] [int] NOT NULL
+  [CreatedBy] [smallint] NULL,
+  [CreatedOn] [datetime] NULL,
+  [HasError] [bit] NULL,
+  [EmployeeId] [smallint] NULL,
+  [ClientId] [int] NULL,
+  [Id] [bigint] NULL
 )
 ON [PRIMARY]
 GO

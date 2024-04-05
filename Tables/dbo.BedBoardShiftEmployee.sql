@@ -1,14 +1,14 @@
 ﻿CREATE TABLE [dbo].[BedBoardShiftEmployee] (
-  [utc_date_updated] [datetime] NOT NULL,
-  [utc_date_created] [datetime] NOT NULL,
-  [updatedby_employee_id] [smallint] NOT NULL,
-  [timezone_date_updated] [datetime] NOT NULL,
-  [timezone_date_created] [datetime] NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [createdby_employee_id] [smallint] NOT NULL,
-  [bedboardshiftemployee_id] [int] NOT NULL,
-  [bedboardshift_id] [int] NOT NULL
+  [updatedby_employee_id] [smallint] NULL,
+  [deleted] [bit] NULL,
+  [createdby_employee_id] [smallint] NULL,
+  [utc_date_updated] [datetime] NULL,
+  [utc_date_created] [datetime] NULL,
+  [timezone_date_updated] [datetime] NULL,
+  [timezone_date_created] [datetime] NULL,
+  [bedboardshift_id] [int] NULL,
+  [emp_id] [smallint] NULL,
+  [bedboardshiftemployee_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[ClientBedBoardIntervalDay] (
-  [timeout] [datetime] NOT NULL,
-  [timein] [datetime] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [clientbedboardintervalday_id] [int] NOT NULL,
-  [clientbedboardinterval_id] [int] NOT NULL
+  [clientvisit_id] [int] NULL,
+  [timeout] [datetime] NULL,
+  [timein] [datetime] NULL,
+  [clientbedboardinterval_id] [int] NULL,
+  [clientbedboardintervalday_id] [int] NULL
 )
 ON [PRIMARY]
 GO

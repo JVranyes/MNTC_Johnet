@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[StateReportingResponse] (
-  [status] [nvarchar](50) NOT NULL,
-  [statereportingresponse_id] [int] NOT NULL,
-  [source_system] [nvarchar](50) NOT NULL,
-  [response_type] [nvarchar](50) NOT NULL,
-  [document_function] [nvarchar](50) NOT NULL,
-  [date_created_utc] [datetime2] NOT NULL,
-  [created_by] [smallint] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [batch_id] [int] NOT NULL
+  [created_by] [smallint] NULL,
+  [source_system] [nvarchar](50) NULL,
+  [date_created_utc] [datetime2] NULL,
+  [clientvisit_id] [int] NULL,
+  [batch_id] [int] NULL,
+  [document_function] [nvarchar](50) NULL,
+  [response_type] [nvarchar](50) NULL,
+  [status] [nvarchar](50) NULL,
+  [statereportingresponse_id] [int] NULL
 )
 ON [PRIMARY]
 GO

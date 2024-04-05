@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[FormDataDict] (
-  [question_id] [int] NOT NULL,
-  [form_id] [smallint] NOT NULL,
-  [data_dict_id] [smallint] NOT NULL
+  [question_id] [int] NULL,
+  [form_id] [smallint] NULL,
+  [data_dict_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[LiabilityFile] (
-  [updated_by] [smallint] NOT NULL,
-  [liabilityfile_id] [int] NOT NULL,
-  [date_updated_utc] [datetime] NOT NULL,
-  [clientliability_id] [int] NOT NULL
+  [clientliability_id] [int] NULL,
+  [client_id] [int] NULL,
+  [file_id] [int] NULL,
+  [liabilityfile_id] [int] NULL,
+  [updated_by] [smallint] NULL
 )
 ON [PRIMARY]
 GO

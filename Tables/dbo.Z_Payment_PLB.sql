@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[Z_Payment_PLB] (
-  [provider_id] [varchar](50) NOT NULL,
-  [plb_id] [int] NOT NULL,
-  [payment_id] [int] NOT NULL,
-  [load835_id] [int] NOT NULL,
-  [fiscal_period_date] [date] NOT NULL,
-  [adjustment_reason_code] [varchar](2) NOT NULL,
-  [adjustment_identifier] [varchar](50) NOT NULL,
-  [adjustment_amount] [decimal] NOT NULL
+  [adjustment_amount] [decimal] NULL,
+  [adjustment_identifier] [varchar](50) NULL,
+  [adjustment_reason_code] [varchar](2) NULL,
+  [fiscal_period_date] [date] NULL,
+  [provider_id] [varchar](50) NULL,
+  [payment_id] [int] NULL,
+  [load835_id] [int] NULL,
+  [plb_id] [int] NULL
 )
 ON [PRIMARY]
 GO

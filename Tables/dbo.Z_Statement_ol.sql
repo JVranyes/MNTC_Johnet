@@ -1,17 +1,17 @@
 ﻿CREATE TABLE [dbo].[Z_Statement_ol] (
-  [statementbatch_id] [int] NOT NULL,
-  [statement_id] [int] NOT NULL,
-  [guarantor_dependent_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL,
-  [bal_U30] [decimal] NOT NULL,
-  [bal_old] [decimal] NOT NULL,
-  [bal_new] [decimal] NOT NULL,
-  [bal_ins] [decimal] NOT NULL,
-  [bal_client] [decimal] NOT NULL,
-  [bal_90P] [decimal] NOT NULL,
-  [bal_6090] [decimal] NOT NULL,
-  [bal_3060] [decimal] NOT NULL,
-  [adjustment_amount] [decimal] NOT NULL
+  [adjustment_amount] [decimal] NULL,
+  [guarantor_dependent_id] [int] NULL,
+  [bal_old] [decimal] NULL,
+  [bal_new] [decimal] NULL,
+  [bal_90P] [decimal] NULL,
+  [bal_6090] [decimal] NULL,
+  [bal_3060] [decimal] NULL,
+  [bal_U30] [decimal] NULL,
+  [bal_client] [decimal] NULL,
+  [bal_ins] [decimal] NULL,
+  [client_id] [int] NULL,
+  [statementbatch_id] [int] NULL,
+  [statement_id] [int] NULL
 )
 ON [PRIMARY]
 GO

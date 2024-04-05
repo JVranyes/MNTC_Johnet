@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[EmpRecentClient] (
-  [emp_id] [smallint] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL,
-  [client_id] [int] NOT NULL
+  [date_created] [smalldatetime] NULL,
+  [client_id] [int] NULL,
+  [emp_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

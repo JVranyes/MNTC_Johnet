@@ -1,14 +1,15 @@
 ﻿CREATE TABLE [dbo].[PlannerGroup] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [start_date] [smalldatetime] NOT NULL,
-  [program_override] [bit] NOT NULL,
-  [plannergroup_id] [smallint] NOT NULL,
-  [not_group] [bit] NOT NULL,
-  [max_capacity] [int] NOT NULL,
-  [inactive] [bit] NOT NULL,
-  [end_date] [smalldatetime] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL
+  [program_override] [bit] NULL,
+  [max_capacity] [int] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [date_created] [smalldatetime] NULL,
+  [not_group] [bit] NULL,
+  [inactive] [bit] NULL,
+  [end_date] [smalldatetime] NULL,
+  [start_date] [smalldatetime] NULL,
+  [plannergroup] [varchar](50) NULL,
+  [plannergroup_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[ExternalCodeIdentifier] (
-  [ExternalCodeIdentifierId] [int] NOT NULL,
-  [EntityName] [nvarchar](100) NOT NULL,
-  [EntityKeyValue] [int] NOT NULL,
-  [AttributeValue] [nvarchar](100) NOT NULL,
-  [AttributeName] [nvarchar](100) NOT NULL
+  [AttributeValue] [nvarchar](100) NULL,
+  [AttributeName] [nvarchar](100) NULL,
+  [EntityKeyValue] [int] NULL,
+  [EntityKey] [nvarchar](100) NULL,
+  [EntityName] [nvarchar](100) NULL,
+  [ExternalCodeIdentifierId] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[ClientPortalSignature] (
-  [ord] [int] NOT NULL,
-  [cpvisit_id] [int] NOT NULL,
-  [cpsignature_id] [int] NOT NULL,
-  [category_id] [int] NOT NULL
+  [category_id] [int] NULL,
+  [ord] [int] NULL,
+  [cpvisit_id] [int] NULL,
+  [cpsignature_id] [int] NULL
 )
 ON [PRIMARY]
 GO

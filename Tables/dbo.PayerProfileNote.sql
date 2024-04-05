@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[PayerProfileNote] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [payerprofilenote_id] [int] NOT NULL,
-  [payer_id] [smallint] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [createdby_emp_id] [smallint] NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [createdby_emp_id] [smallint] NULL,
+  [date_updated] [datetime] NULL,
+  [date_created] [datetime] NULL,
+  [deleted] [bit] NULL,
+  [payer_id] [smallint] NULL,
+  [payerprofilenote_id] [int] NULL
 )
 ON [PRIMARY]
 GO

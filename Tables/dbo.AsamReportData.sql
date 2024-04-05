@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[AsamReportData] (
-  [AssessmentId] [nvarchar](256) NOT NULL,
-  [AsamReportMetaDataId] [smallint] NOT NULL,
-  [AsamReportDataId] [int] NOT NULL
+  [AssessmentId] [nvarchar](256) NULL,
+  [AsamReportMetaDataId] [smallint] NULL,
+  [AsamReportDataId] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[RxBuilder] (
-  [rxbuilder_id] [int] NOT NULL,
-  [PriorAuthorizationId] [int] NOT NULL,
-  [med_id] [int] NOT NULL,
-  [emp_id] [smallint] NOT NULL
+  [med_id] [int] NULL,
+  [PriorAuthorizationId] [int] NULL,
+  [emp_id] [smallint] NULL,
+  [rxbuilder_id] [int] NULL
 )
 ON [PRIMARY]
 GO

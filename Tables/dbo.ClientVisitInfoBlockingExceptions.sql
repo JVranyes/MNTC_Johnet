@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ClientVisitInfoBlockingExceptions] (
-  [label_ES] [varchar](100) NOT NULL,
-  [info_blocking_exception_id] [int] NOT NULL
+  [label_ES] [varchar](100) NULL,
+  [label] [varchar](100) NULL
 )
 ON [PRIMARY]
 GO

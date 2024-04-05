@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[MedRecNote] (
-  [ModifiedOn] [datetime] NOT NULL,
-  [ModifiedBy] [smallint] NOT NULL,
-  [MedRecNoteId] [int] NOT NULL,
-  [MedRecId] [int] NOT NULL,
-  [EpisodeId] [int] NOT NULL,
-  [CreatedOn] [datetime] NOT NULL,
-  [CreatedBy] [smallint] NOT NULL
+  [ModifiedBy] [smallint] NULL,
+  [ModifiedOn] [datetime] NULL,
+  [CreatedBy] [smallint] NULL,
+  [CreatedOn] [datetime] NULL,
+  [MedRecId] [int] NULL,
+  [EpisodeId] [int] NULL,
+  [MedRecNoteId] [int] NULL
 )
 ON [PRIMARY]
 GO

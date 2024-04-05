@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ClinicalSupportAxisCode] (
-  [clinicalsupportaxiscode_id] [int] NOT NULL,
-  [clinicalsupport_id] [int] NOT NULL,
-  [axis_code] [varchar](10) NOT NULL
+  [axis_code] [varchar](10) NULL,
+  [clinicalsupport_id] [int] NULL,
+  [clinicalsupportaxiscode_id] [int] NULL
 )
 ON [PRIMARY]
 GO

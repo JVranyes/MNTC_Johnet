@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ClientMMEFStatus] (
-  [ClientMMEFStatus_Name] [varchar](50) NOT NULL,
-  [ClientMMEFStatus_Id] [int] NOT NULL
+  [ClientMMEFStatus_Name] [varchar](50) NULL,
+  [ClientMMEFStatus_Id] [int] NULL
 )
 ON [PRIMARY]
 GO

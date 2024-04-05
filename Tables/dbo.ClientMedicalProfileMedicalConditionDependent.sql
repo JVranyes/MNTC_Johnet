@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ClientMedicalProfileMedicalConditionDependent] (
-  [notes] [varchar](500) NOT NULL,
-  [medicalcondition_id] [smallint] NOT NULL,
-  [dependent_id] [int] NOT NULL,
-  [clientmedicalprofile_id] [int] NOT NULL,
-  [ageOnSet] [smallint] NOT NULL,
-  [ageMortality] [smallint] NOT NULL
+  [notes] [varchar](500) NULL,
+  [ageMortality] [smallint] NULL,
+  [ageOnSet] [smallint] NULL,
+  [dependent_id] [int] NULL,
+  [medicalcondition_id] [smallint] NULL,
+  [clientmedicalprofile_id] [int] NULL
 )
 ON [PRIMARY]
 GO

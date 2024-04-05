@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[Dimensions] (
-  [UsePCLabels] [bit] NOT NULL,
-  [UseEncounter] [bit] NOT NULL,
-  [DimensionId] [int] NOT NULL,
-  [Description] [varchar](500) NOT NULL
+  [UsePCLabels] [bit] NULL,
+  [UseEncounter] [bit] NULL,
+  [Description] [varchar](500) NULL,
+  [Label] [varchar](100) NULL,
+  [DimensionId] [int] NULL
 )
 ON [PRIMARY]
 GO

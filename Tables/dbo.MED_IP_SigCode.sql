@@ -1,14 +1,14 @@
 ﻿CREATE TABLE [dbo].[MED_IP_SigCode] (
-  [UpdatedBy] [varchar](35) NOT NULL,
-  [Type] [varchar](20) NOT NULL,
-  [SigCode] [varchar](250) NOT NULL,
-  [MaxDoses] [int] NOT NULL,
-  [Id] [int] NOT NULL,
-  [FrequencyValue] [int] NOT NULL,
-  [FrequencyUnit] [varchar](20) NOT NULL,
-  [Days] [tinyint] NOT NULL,
-  [DateUpdatedUtc] [datetime2] NOT NULL,
-  [DateCreatedUtc] [datetime2] NOT NULL
+  [UpdatedBy] [varchar](35) NULL,
+  [DateUpdatedUtc] [datetime2] NULL,
+  [DateCreatedUtc] [datetime2] NULL,
+  [FrequencyUnit] [varchar](20) NULL,
+  [FrequencyValue] [int] NULL,
+  [MaxDoses] [int] NULL,
+  [Days] [tinyint] NULL,
+  [Type] [varchar](20) NULL,
+  [SigCode] [varchar](250) NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

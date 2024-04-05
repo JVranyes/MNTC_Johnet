@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[DeviceConfig] (
-  [paramvalue] [varchar](255) NOT NULL,
-  [parameter] [varchar](25) NOT NULL,
-  [deviceconfig_id] [int] NOT NULL
+  [paramvalue] [varchar](255) NULL,
+  [parameter] [varchar](25) NULL,
+  [deviceconfig_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[PayerRenderingEmployee] (
-  [start_date] [smalldatetime] NOT NULL,
-  [payerrenderingemp_id] [int] NOT NULL,
-  [payer_id] [smallint] NOT NULL,
-  [end_date] [smalldatetime] NOT NULL,
-  [can_overriderender] [bit] NOT NULL
+  [end_date] [smalldatetime] NULL,
+  [start_date] [smalldatetime] NULL,
+  [can_overriderender] [bit] NULL,
+  [emp_id] [smallint] NULL,
+  [payer_id] [smallint] NULL,
+  [payerrenderingemp_id] [int] NULL
 )
 ON [PRIMARY]
 GO

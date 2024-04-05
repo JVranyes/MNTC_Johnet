@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[PredefinedRedXRequiredRecipientType] (
-  [recipienttype_id] [smallint] NOT NULL,
-  [predefinedredxrequiredrecipienttype_id] [smallint] NOT NULL,
-  [predefinedredxrequirednumberofvisits_id] [smallint] NOT NULL
+  [recipienttype_id] [smallint] NULL,
+  [predefinedredxrequirednumberofvisits_id] [smallint] NULL,
+  [predefinedredxrequiredrecipienttype_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

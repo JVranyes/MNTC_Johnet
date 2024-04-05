@@ -1,7 +1,8 @@
 ﻿CREATE TABLE [dbo].[Z_RetrievedFiles] (
-  [retrievedfile_id] [int] NOT NULL,
-  [retrieved_on] [datetime] NOT NULL,
-  [retrieved_by] [int] NOT NULL
+  [retrieved_on] [datetime] NULL,
+  [retrieved_by] [int] NULL,
+  [retrievedfile] [varchar](150) NULL,
+  [retrievedfile_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[TeamBillingGroups] (
-  [team_id] [smallint] NOT NULL,
-  [is_default] [bit] NOT NULL,
-  [billing_group_id] [smallint] NOT NULL
+  [is_default] [bit] NULL,
+  [billing_group_id] [smallint] NULL,
+  [team_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

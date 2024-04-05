@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[DebuggingLog] (
-  [idDebuggingLog] [int] NOT NULL
+  [idDebuggingLog] [int] NULL
 )
 ON [PRIMARY]
 GO

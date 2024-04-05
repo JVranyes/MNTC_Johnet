@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[AuthLevelPayer] (
-  [payer_id] [smallint] NOT NULL,
-  [authlevel_id] [smallint] NOT NULL
+  [payer_id] [smallint] NULL,
+  [authlevel_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

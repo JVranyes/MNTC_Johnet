@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[QcAssignPayerTypes] (
-  [QcQualifyingCriteriaId] [int] NOT NULL,
-  [QcAssignPayerTypes_ID] [int] NOT NULL,
-  [payer_id] [smallint] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [createdby_emp_id] [int] NOT NULL
+  [date_created] [datetime] NULL,
+  [createdby_emp_id] [int] NULL,
+  [QcQualifyingCriteriaId] [int] NULL,
+  [payer_id] [smallint] NULL,
+  [QcAssignPayerTypes_ID] [int] NULL
 )
 ON [PRIMARY]
 GO

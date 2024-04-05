@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ClientBedBoardConfig] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL,
-  [clientbedboardconfig_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL,
-  [bedboard_billing_merge_gap_days_out] [smallint] NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [date_created] [smalldatetime] NULL,
+  [bedboard_billing_merge_gap_days_out] [smallint] NULL,
+  [client_id] [int] NULL,
+  [clientbedboardconfig_id] [int] NULL
 )
 ON [PRIMARY]
 GO

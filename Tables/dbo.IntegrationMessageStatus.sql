@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[IntegrationMessageStatus] (
-  [TransferStatus] [nvarchar](50) NOT NULL,
-  [StatusDateTimeUtc] [datetime] NOT NULL,
-  [RemainingRetries] [smallint] NOT NULL,
-  [IntegrationMessageId] [int] NOT NULL
+  [StatusDateTimeUtc] [datetime] NULL,
+  [RemainingRetries] [smallint] NULL,
+  [TransferStatus] [nvarchar](50) NULL,
+  [IntegrationMessageId] [int] NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

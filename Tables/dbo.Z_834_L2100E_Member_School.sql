@@ -1,0 +1,32 @@
+﻿CREATE TABLE [dbo].[Z_834_L2100E_Member_School] (
+  [code4_end] [char](1) NULL,
+  [country] [char](3) NULL,
+  [zip] [varchar](15) NULL,
+  [state] [char](2) NULL,
+  [city] [varchar](30) NULL,
+  [code4] [char](2) NULL,
+  [code3_end] [char](1) NULL,
+  [street2] [varchar](55) NULL,
+  [street1] [varchar](55) NULL,
+  [code3] [char](2) NULL,
+  [code2_end] [char](1) NULL,
+  [contact_number3] [varchar](80) NULL,
+  [contact_qual3] [char](2) NULL,
+  [contact_number2] [varchar](80) NULL,
+  [contact_qual2] [char](2) NULL,
+  [contact_number] [varchar](80) NULL,
+  [contact_qual] [char](2) NULL,
+  [temp2] [char](1) NULL,
+  [contact_function_code] [char](2) NULL,
+  [code2] [char](3) NULL,
+  [code1_end] [char](1) NULL,
+  [school_name] [varchar](35) NULL,
+  [entity_qual] [char](1) NULL,
+  [entity_id_code] [char](2) NULL,
+  [code1] [char](3) NULL,
+  [l2000_id] [int] NULL,
+  [batch_id] [int] NULL,
+  [l2100d_id] [int] NULL
+)
+ON [PRIMARY]
+GO

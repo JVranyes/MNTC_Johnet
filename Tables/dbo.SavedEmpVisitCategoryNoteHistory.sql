@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[SavedEmpVisitCategoryNoteHistory] (
-  [empvisitdocversion_id] [int] NOT NULL,
-  [category_id] [int] NOT NULL
+  [category_id] [int] NULL,
+  [empvisitdocversion_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,20 +1,20 @@
 ﻿CREATE TABLE [dbo].[ClientPortalVisit] (
-  [visittype_id] [smallint] NOT NULL,
-  [submitted_on_utc] [datetime2] NOT NULL,
-  [submitted_by] [nvarchar](256) NOT NULL,
-  [status] [int] NOT NULL,
-  [plan_id] [int] NOT NULL,
-  [mapped_on_utc] [datetime2] NOT NULL,
-  [mapped_by] [varchar](16) NOT NULL,
-  [form_ver_id] [int] NOT NULL,
-  [form_id] [smallint] NOT NULL,
-  [date_updated_utc] [datetime2] NOT NULL,
-  [date_created_utc] [datetime2] NOT NULL,
-  [cpvisittype_id] [int] NOT NULL,
-  [cpvisit_id] [int] NOT NULL,
-  [cpusername] [nvarchar](256) NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL
+  [mapped_on_utc] [datetime2] NULL,
+  [mapped_by] [varchar](16) NULL,
+  [cpvisittype_id] [int] NULL,
+  [submitted_on_utc] [datetime2] NULL,
+  [submitted_by] [nvarchar](256) NULL,
+  [date_updated_utc] [datetime2] NULL,
+  [date_created_utc] [datetime2] NULL,
+  [plan_id] [int] NULL,
+  [clientvisit_id] [int] NULL,
+  [form_id] [smallint] NULL,
+  [cpusername] [nvarchar](256) NULL,
+  [client_id] [int] NULL,
+  [form_ver_id] [int] NULL,
+  [status] [int] NULL,
+  [visittype_id] [smallint] NULL,
+  [cpvisit_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[PlannerTemplateEmployee] (
-  [templaterecurrence_id] [int] NOT NULL,
-  [template_id] [smallint] NOT NULL,
-  [start_time] [char](4) NOT NULL,
-  [plan_date] [smalldatetime] NOT NULL,
-  [end_time] [char](4) NOT NULL,
-  [emptemplate_id] [int] NOT NULL,
-  [emp_id] [smallint] NOT NULL
+  [end_time] [char](4) NULL,
+  [start_time] [char](4) NULL,
+  [templaterecurrence_id] [int] NULL,
+  [plan_date] [smalldatetime] NULL,
+  [emp_id] [smallint] NULL,
+  [template_id] [smallint] NULL,
+  [emptemplate_id] [int] NULL
 )
 ON [PRIMARY]
 GO

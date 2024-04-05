@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[QcCategories] (
-  [QcCategoryName] [nvarchar](50) NOT NULL,
-  [QcCategoryId] [int] NOT NULL
+  [QcCategoryName] [nvarchar](50) NULL,
+  [QcCategoryId] [int] NULL
 )
 ON [PRIMARY]
 GO

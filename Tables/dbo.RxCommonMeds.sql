@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[RxCommonMeds] (
-  [fdb_medid] [int] NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [date_added] [smalldatetime] NOT NULL
+  [date_added] [smalldatetime] NULL,
+  [emp_id] [smallint] NULL,
+  [fdb_medid] [int] NULL
 )
 ON [PRIMARY]
 GO

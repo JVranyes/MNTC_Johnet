@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ClinicalSupportFile] (
-  [filefolder_id] [int] NOT NULL,
-  [file_id] [int] NOT NULL,
-  [clinicalsupportfile_id] [int] NOT NULL
+  [filefolder_id] [int] NULL,
+  [file_id] [int] NULL,
+  [clinicalsupportfile_id] [int] NULL
 )
 ON [PRIMARY]
 GO

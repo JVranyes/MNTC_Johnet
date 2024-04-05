@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[MaintenanceMessage] (
-  [StartTime] [time] NOT NULL,
-  [StartMessageDate] [date] NOT NULL,
-  [ScheduleCycle] [varchar](1) NOT NULL,
-  [id] [int] NOT NULL,
-  [EndTime] [time] NOT NULL,
-  [EndMessageDate] [date] NOT NULL,
-  [Enabled] [bit] NOT NULL,
-  [DayOfWeek] [varchar](2) NOT NULL,
-  [DayOfMonth] [int] NOT NULL
+  [Enabled] [bit] NULL,
+  [DayOfMonth] [int] NULL,
+  [DayOfWeek] [varchar](2) NULL,
+  [EndTime] [time] NULL,
+  [StartTime] [time] NULL,
+  [EndMessageDate] [date] NULL,
+  [StartMessageDate] [date] NULL,
+  [ScheduleCycle] [varchar](1) NULL,
+  [id] [int] NULL
 )
 ON [PRIMARY]
 GO

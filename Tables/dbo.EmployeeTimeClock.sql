@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[EmployeeTimeClock] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [employeetimeclock_id] [int] NOT NULL,
-  [clock_out] [smalldatetime] NOT NULL,
-  [clock_in] [smalldatetime] NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [clock_out] [smalldatetime] NULL,
+  [clock_in] [smalldatetime] NULL,
+  [emp_id] [smallint] NULL,
+  [employeetimeclock_id] [int] NULL
 )
 ON [PRIMARY]
 GO

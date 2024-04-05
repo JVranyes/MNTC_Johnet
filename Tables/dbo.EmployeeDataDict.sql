@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[EmployeeDataDict] (
-  [emp_id] [smallint] NOT NULL,
-  [data_dict_id] [smallint] NOT NULL
+  [emp_id] [smallint] NULL,
+  [data_dict_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

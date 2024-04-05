@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[PlanTypeDetail] (
-  [relPlanTypeDetail_id] [int] NOT NULL,
-  [plantype_id] [int] NOT NULL,
-  [planTreeElement_id] [int] NOT NULL,
-  [display_order] [smallint] NOT NULL,
-  [discipline_id] [int] NOT NULL,
-  [customElement_id] [int] NOT NULL
+  [display_order] [smallint] NULL,
+  [planTreeElement_id] [int] NULL,
+  [customElement_id] [int] NULL,
+  [discipline_id] [int] NULL,
+  [plantype_id] [int] NULL,
+  [relPlanTypeDetail_id] [int] NULL
 )
 ON [PRIMARY]
 GO

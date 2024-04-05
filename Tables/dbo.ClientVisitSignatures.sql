@@ -1,16 +1,16 @@
 ﻿CREATE TABLE [dbo].[ClientVisitSignatures] (
-  [signature_id] [int] NOT NULL,
-  [signature_datetime] [datetime] NOT NULL,
-  [print_name] [varchar](50) NOT NULL,
-  [ord] [tinyint] NOT NULL,
-  [is_injected] [bit] NOT NULL,
-  [employeesignature_id] [int] NOT NULL,
-  [emp_title] [varchar](75) NOT NULL,
-  [emp_name] [varchar](75) NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [emp_credentials] [varchar](50) NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [category_id] [int] NOT NULL
+  [emp_title] [varchar](75) NULL,
+  [emp_credentials] [varchar](50) NULL,
+  [emp_name] [varchar](75) NULL,
+  [employeesignature_id] [int] NULL,
+  [emp_id] [smallint] NULL,
+  [print_name] [varchar](50) NULL,
+  [is_injected] [bit] NULL,
+  [signature_datetime] [datetime] NULL,
+  [category_id] [int] NULL,
+  [ord] [tinyint] NULL,
+  [clientvisit_id] [int] NULL,
+  [signature_id] [int] NULL
 )
 ON [PRIMARY]
 GO

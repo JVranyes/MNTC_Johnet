@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[BulkClientVisitReportsOffline_VisitSigs] (
-  [visitsig_id] [int] NOT NULL,
-  [report_id] [int] NOT NULL
+  [report_id] [int] NULL,
+  [visitsig_id] [int] NULL
 )
 ON [PRIMARY]
 GO

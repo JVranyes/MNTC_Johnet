@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[EmpImage] (
-  [empimage_id] [int] NOT NULL,
-  [emp_id] [smallint] NOT NULL
+  [emp_id] [smallint] NULL,
+  [empimage_id] [int] NULL
 )
 ON [PRIMARY]
 GO

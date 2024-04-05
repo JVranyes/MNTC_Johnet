@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[ClientNotification] (
-  [plan_id] [int] NOT NULL,
-  [notified_at] [datetime] NOT NULL,
-  [notification_type] [varchar](5) NOT NULL,
-  [client_notification_id] [int] NOT NULL
+  [notified_at] [datetime] NULL,
+  [notification_type] [varchar](5) NULL,
+  [plan_id] [int] NULL,
+  [client_notification_id] [int] NULL
 )
 ON [PRIMARY]
 GO

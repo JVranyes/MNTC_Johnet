@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ClientNotificationType] (
-  [label] [varchar](20) NOT NULL,
-  [client_notification_type_id] [int] NOT NULL
+  [label] [varchar](20) NULL,
+  [client_notification_type_id] [int] NULL
 )
 ON [PRIMARY]
 GO

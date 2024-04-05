@@ -1,20 +1,20 @@
 ﻿CREATE TABLE [dbo].[PQRIOutcome] (
-  [waiver_signed] [bit] NOT NULL,
-  [to_date] [datetime] NOT NULL,
-  [tin] [varchar](9) NOT NULL,
-  [reporting_rate] [decimal] NOT NULL,
-  [provider_id] [int] NOT NULL,
-  [pqrioutcome_id] [int] NOT NULL,
-  [pqri_id] [int] NOT NULL,
-  [performance_rate] [decimal] NOT NULL,
-  [npi] [varchar](10) NOT NULL,
-  [not_met_instances] [float] NOT NULL,
-  [meets_instances] [float] NOT NULL,
-  [measure] [char](3) NOT NULL,
-  [is_employee] [bit] NOT NULL,
-  [from_date] [datetime] NOT NULL,
-  [exclusion_instances] [float] NOT NULL,
-  [eligible_instances] [float] NOT NULL
+  [is_employee] [bit] NULL,
+  [provider_id] [int] NULL,
+  [performance_rate] [decimal] NULL,
+  [reporting_rate] [decimal] NULL,
+  [not_met_instances] [float] NULL,
+  [exclusion_instances] [float] NULL,
+  [meets_instances] [float] NULL,
+  [eligible_instances] [float] NULL,
+  [measure] [char](3) NULL,
+  [to_date] [datetime] NULL,
+  [from_date] [datetime] NULL,
+  [waiver_signed] [bit] NULL,
+  [tin] [varchar](9) NULL,
+  [npi] [varchar](10) NULL,
+  [pqri_id] [int] NULL,
+  [pqrioutcome_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[AsamClientData] (
-  [patient_id] [nvarchar](256) NOT NULL,
-  [clientdata_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL
+  [patient_id] [nvarchar](256) NULL,
+  [client_id] [int] NULL,
+  [clientdata_id] [int] NULL
 )
 ON [PRIMARY]
 GO

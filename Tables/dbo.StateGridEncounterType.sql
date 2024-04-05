@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[StateGridEncounterType] (
-  [updated_by_emp_id] [smallint] NOT NULL,
-  [state_grid_encounter_type_id] [int] NOT NULL,
-  [description] [varchar](255) NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [created_by_emp_id] [smallint] NOT NULL,
-  [code] [varchar](4) NOT NULL
+  [updated_by_emp_id] [smallint] NULL,
+  [date_updated] [datetime] NULL,
+  [created_by_emp_id] [smallint] NULL,
+  [date_created] [datetime] NULL,
+  [description] [varchar](255) NULL,
+  [code] [varchar](4) NULL,
+  [state_grid_encounter_type_id] [int] NULL
 )
 ON [PRIMARY]
 GO

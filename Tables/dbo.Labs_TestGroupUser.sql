@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Labs_TestGroupUser] (
-  [TestGroupId] [int] NOT NULL,
-  [EmployeeId] [int] NOT NULL
+  [EmployeeId] [int] NULL,
+  [TestGroupId] [int] NULL
 )
 ON [PRIMARY]
 GO

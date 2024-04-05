@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[ClientOutcome] (
-  [program_id] [int] NOT NULL,
-  [outcome_value] [varchar](250) NOT NULL,
-  [outcome_date] [smalldatetime] NOT NULL,
-  [lookup_id] [smallint] NOT NULL,
-  [episode_id] [int] NOT NULL,
-  [datadict_id] [smallint] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [clientoutcome_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL
+  [program_id] [int] NULL,
+  [episode_id] [int] NULL,
+  [lookup_id] [smallint] NULL,
+  [outcome_date] [smalldatetime] NULL,
+  [outcome_value] [varchar](250) NULL,
+  [datadict_id] [smallint] NULL,
+  [clientvisit_id] [int] NULL,
+  [client_id] [int] NULL,
+  [clientoutcome_id] [int] NULL
 )
 ON [PRIMARY]
 GO

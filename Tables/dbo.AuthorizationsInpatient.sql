@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[AuthorizationsInpatient] (
-  [UtilizationReviewDate] [smalldatetime] NOT NULL,
-  [InpatientRate] [decimal] NOT NULL,
-  [BedBoardFacilityId] [smallint] NOT NULL,
-  [AuthorizationId] [int] NOT NULL
+  [UtilizationReviewDate] [smalldatetime] NULL,
+  [InpatientRate] [decimal] NULL,
+  [BedBoardFacilityId] [smallint] NULL,
+  [AuthorizationId] [int] NULL
 )
 ON [PRIMARY]
 GO

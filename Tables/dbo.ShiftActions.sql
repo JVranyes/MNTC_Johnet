@@ -1,10 +1,12 @@
 ﻿CREATE TABLE [dbo].[ShiftActions] (
-  [utc_datecreated] [datetime] NOT NULL,
-  [shiftemployee_id] [int] NOT NULL,
-  [shiftaction_id] [int] NOT NULL,
-  [shift_id] [int] NOT NULL,
-  [note] [varchar](255) NOT NULL,
-  [date_created] [datetime] NOT NULL
+  [note] [varchar](255) NULL,
+  [utc_datecreated] [datetime] NULL,
+  [date_created] [datetime] NULL,
+  [action] [smallint] NULL,
+  [shiftemployee_id] [int] NULL,
+  [employee_id] [smallint] NULL,
+  [shift_id] [int] NULL,
+  [shiftaction_id] [int] NULL
 )
 ON [PRIMARY]
 GO

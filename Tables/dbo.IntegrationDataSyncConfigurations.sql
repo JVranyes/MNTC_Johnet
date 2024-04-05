@@ -1,8 +1,16 @@
 ﻿CREATE TABLE [dbo].[IntegrationDataSyncConfigurations] (
-  [Modality] [smallint] NOT NULL,
-  [IsExcludedFromSync] [bit] NOT NULL,
-  [IntegrationEventTypeId] [int] NOT NULL,
-  [Description] [varchar](200) NOT NULL
+  [IsDeleted] [bit] NULL,
+  [DeletedDate] [datetime] NULL,
+  [DeletedBy] [int] NULL,
+  [UpdatedDate] [datetime] NULL,
+  [UpdatedBy] [int] NULL,
+  [ConfigApplyOnwards] [datetime] NULL,
+  [IsSendClientData] [bit] NULL,
+  [IsExcludedFromSync] [bit] NULL,
+  [Modality] [varchar](20) NULL,
+  [Description] [varchar](200) NULL,
+  [IntegrationEventTypeId] [int] NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

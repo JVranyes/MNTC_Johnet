@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[SavedEmpVisitAnswerNoteHistory] (
-  [updated_date_utc] [datetime2] NOT NULL,
-  [updated_by] [smallint] NOT NULL,
-  [question_id] [int] NOT NULL,
-  [empvisitdocversion_id] [int] NOT NULL
+  [updated_date_utc] [datetime2] NULL,
+  [updated_by] [smallint] NULL,
+  [question_id] [int] NULL,
+  [empvisitdocversion_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,7 +1,8 @@
 ﻿CREATE TABLE [dbo].[AmendmentType] (
-  [table_name] [varchar](128) NOT NULL,
-  [description] [varchar](500) NOT NULL,
-  [amendmenttype_id] [int] NOT NULL
+  [description] [varchar](500) NULL,
+  [table_name] [varchar](128) NULL,
+  [name] [varchar](20) NULL,
+  [amendmenttype_id] [int] NULL
 )
 ON [PRIMARY]
 GO

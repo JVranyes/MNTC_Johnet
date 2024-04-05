@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Numbers] (
-  [number] [int] NOT NULL
+  [number] [int] NULL
 )
 ON [PRIMARY]
 GO

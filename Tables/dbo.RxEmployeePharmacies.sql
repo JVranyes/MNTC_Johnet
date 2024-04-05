@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[RxEmployeePharmacies] (
-  [zip] [varchar](50) NOT NULL,
-  [type] [varchar](50) NOT NULL,
-  [state] [varchar](2) NOT NULL,
-  [ncpdpid] [varchar](50) NOT NULL,
-  [emp_id] [smallint] NOT NULL,
-  [date_added] [smalldatetime] NOT NULL,
-  [city] [varchar](100) NOT NULL
+  [date_added] [smalldatetime] NULL,
+  [zip] [varchar](50) NULL,
+  [state] [varchar](2) NULL,
+  [city] [varchar](100) NULL,
+  [type] [varchar](50) NULL,
+  [ncpdpid] [varchar](50) NULL,
+  [emp_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

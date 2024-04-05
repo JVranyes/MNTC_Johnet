@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[OrderCategory] (
-  [order_category_id] [int] NOT NULL,
-  [description] [varchar](50) NOT NULL
+  [description] [varchar](50) NULL,
+  [order_category_id] [int] NULL
 )
 ON [PRIMARY]
 GO

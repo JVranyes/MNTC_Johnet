@@ -1,15 +1,15 @@
 ﻿CREATE TABLE [dbo].[DocumentReferenceCCDFhirResource] (
-  [Orginal_Name] [varchar](3) NOT NULL,
-  [Loinc_Name] [varchar](27) NOT NULL,
-  [Loinc_Code] [varchar](7) NOT NULL,
-  [Is_Remote] [bit] NOT NULL,
-  [Is_Netshare] [bit] NOT NULL,
-  [Id] [int] NOT NULL,
-  [File_Id] [varchar](14) NOT NULL,
-  [File_Desc] [varchar](27) NOT NULL,
-  [Date_Created] [smalldatetime] NOT NULL,
-  [Created_By] [smallint] NOT NULL,
-  [Client_ID] [int] NOT NULL
+  [Loinc_Name] [varchar](27) NULL,
+  [Loinc_Code] [varchar](7) NULL,
+  [File_Id] [varchar](14) NULL,
+  [Is_Netshare] [bit] NULL,
+  [Is_Remote] [bit] NULL,
+  [Orginal_Name] [varchar](3) NULL,
+  [File_Desc] [varchar](27) NULL,
+  [Date_Created] [smalldatetime] NULL,
+  [Created_By] [smallint] NULL,
+  [Client_ID] [int] NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

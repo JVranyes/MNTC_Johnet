@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[PlannerEmp] (
-  [plan_id] [int] NOT NULL,
-  [emp_id] [smallint] NOT NULL
+  [emp_id] [smallint] NULL,
+  [plan_id] [int] NULL
 )
 ON [PRIMARY]
 GO

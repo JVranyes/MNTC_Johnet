@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[ClientVisitPicture] (
-  [clientvisit_id] [int] NOT NULL
+  [clientvisit_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[PredefinedRedXCredential] (
-  [predefinedredxcredential_id] [int] NOT NULL,
-  [predefinedredx_id] [smallint] NOT NULL
+  [credential_id] [smallint] NULL,
+  [predefinedredx_id] [smallint] NULL,
+  [predefinedredxcredential_id] [int] NULL
 )
 ON [PRIMARY]
 GO

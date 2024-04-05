@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[Assets] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL,
-  [asset_id] [smallint] NOT NULL,
-  [asset_desc] [varchar](150) NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [date_created] [smalldatetime] NULL,
+  [asset_desc] [varchar](150) NULL,
+  [asset] [varchar](15) NULL,
+  [asset_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[CustomWileyGroup] (
-  [sort_order] [int] NOT NULL,
-  [partner_id] [int] NOT NULL,
-  [GroupId] [int] NOT NULL
+  [sort_order] [int] NULL,
+  [partner_id] [int] NULL,
+  [GroupId] [int] NULL
 )
 ON [PRIMARY]
 GO

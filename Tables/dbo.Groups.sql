@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Groups] (
-  [group_id] [smallint] NOT NULL,
-  [group_desc] [varchar](50) NOT NULL,
-  [group_code] [varchar](10) NOT NULL,
-  [external_code] [varchar](20) NOT NULL,
-  [deleted] [bit] NOT NULL
+  [deleted] [bit] NULL,
+  [external_code] [varchar](20) NULL,
+  [group_desc] [varchar](50) NULL,
+  [group_code] [varchar](10) NULL,
+  [group_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

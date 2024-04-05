@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Labs_ELabTestDiagnosis] (
-  [ELabOrderTestId] [int] NOT NULL,
-  [ELabOrderDiagnosisId] [int] NOT NULL
+  [ELabOrderDiagnosisId] [int] NULL,
+  [ELabOrderTestId] [int] NULL
 )
 ON [PRIMARY]
 GO

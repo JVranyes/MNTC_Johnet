@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[PdmpRule] (
-  [Workflow] [int] NOT NULL,
-  [RequiredTask] [int] NOT NULL,
-  [ModifiedOn] [datetime] NOT NULL,
-  [ModifiedBy] [smallint] NOT NULL,
-  [Medication] [int] NOT NULL,
-  [IsActive] [bit] NOT NULL,
-  [Id] [int] NOT NULL,
-  [CreatedOn] [datetime] NOT NULL,
-  [CreatedBy] [smallint] NOT NULL
+  [ModifiedBy] [smallint] NULL,
+  [ModifiedOn] [datetime] NULL,
+  [CreatedBy] [smallint] NULL,
+  [CreatedOn] [datetime] NULL,
+  [IsActive] [bit] NULL,
+  [RequiredTask] [int] NULL,
+  [Medication] [int] NULL,
+  [Workflow] [int] NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

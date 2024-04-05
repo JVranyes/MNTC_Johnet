@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[PlannerGroupProgram] (
-  [program_id] [smallint] NOT NULL,
-  [plannergroupprogram_id] [int] NOT NULL,
-  [plannergroup_id] [smallint] NOT NULL
+  [plannergroup_id] [smallint] NULL,
+  [program_id] [smallint] NULL,
+  [plannergroupprogram_id] [int] NULL
 )
 ON [PRIMARY]
 GO

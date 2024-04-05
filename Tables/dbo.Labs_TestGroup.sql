@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[Labs_TestGroup] (
-  [UpdatedOn] [datetime] NOT NULL,
-  [TestGroupId] [int] NOT NULL,
-  [LabName] [nvarchar](50) NOT NULL,
-  [LabId] [nvarchar](50) NOT NULL,
-  [GroupName] [nvarchar](100) NOT NULL,
-  [CreatedOn] [datetime] NOT NULL,
-  [CreatedBy] [int] NOT NULL,
-  [Availability] [int] NOT NULL
+  [UpdatedOn] [datetime] NULL,
+  [CreatedOn] [datetime] NULL,
+  [CreatedBy] [int] NULL,
+  [Availability] [int] NULL,
+  [LabName] [nvarchar](50) NULL,
+  [LabId] [nvarchar](50) NULL,
+  [GroupName] [nvarchar](100) NULL,
+  [TestGroupId] [int] NULL
 )
 ON [PRIMARY]
 GO

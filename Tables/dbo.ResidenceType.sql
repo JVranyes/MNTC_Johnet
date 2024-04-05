@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[ResidenceType] (
-  [residencetype_id] [smallint] NOT NULL,
-  [residence_type] [char](1) NOT NULL,
-  [external_id] [varchar](12) NOT NULL,
-  [description] [varchar](50) NOT NULL
+  [external_id] [varchar](12) NULL,
+  [description] [varchar](50) NULL,
+  [residence_type] [char](1) NULL,
+  [residencetype_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

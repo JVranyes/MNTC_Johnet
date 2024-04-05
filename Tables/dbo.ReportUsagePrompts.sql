@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[ReportUsagePrompts] (
-  [reportusageprompts_id] [int] NOT NULL,
-  [reportusage_id] [int] NOT NULL,
-  [prompttype] [varchar](50) NOT NULL,
-  [prompt_num] [int] NOT NULL
+  [prompttype] [varchar](50) NULL,
+  [prompt] [varchar](500) NULL,
+  [prompt_num] [int] NULL,
+  [reportusage_id] [int] NULL,
+  [reportusageprompts_id] [int] NULL
 )
 ON [PRIMARY]
 GO

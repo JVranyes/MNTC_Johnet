@@ -1,15 +1,16 @@
 ﻿CREATE TABLE [dbo].[BulkClientVisitReportsOffline_Header] (
-  [span_day] [bit] NOT NULL,
-  [spacer_len] [varchar](220) NOT NULL,
-  [report_id] [int] NOT NULL,
-  [rec_count] [int] NOT NULL,
-  [new_col] [bit] NOT NULL,
-  [label] [varchar](220) NOT NULL,
-  [is_date] [bit] NOT NULL,
-  [header_id] [int] NOT NULL,
-  [double_wide] [bit] NOT NULL,
-  [colval] [varchar](220) NOT NULL,
-  [colname] [varchar](220) NOT NULL
+  [report_id] [int] NULL,
+  [rec_count] [int] NULL,
+  [is_date] [bit] NULL,
+  [span_day] [bit] NULL,
+  [spacer_len] [varchar](220) NULL,
+  [spacer] [varchar](220) NULL,
+  [double_wide] [bit] NULL,
+  [new_col] [bit] NULL,
+  [colval] [varchar](220) NULL,
+  [label] [varchar](220) NULL,
+  [colname] [varchar](220) NULL,
+  [header_id] [int] NULL
 )
 ON [PRIMARY]
 GO

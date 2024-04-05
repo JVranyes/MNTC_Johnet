@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[EmarAdminTime] (
-  [timestring] [varchar](75) NOT NULL,
-  [label] [varchar](8) NOT NULL,
-  [emaradmintime_id] [int] NOT NULL
+  [timestring] [varchar](75) NULL,
+  [label] [varchar](8) NULL,
+  [emaradmintime_id] [int] NULL
 )
 ON [PRIMARY]
 GO

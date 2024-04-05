@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ChangeLogDetail] (
-  [detail1_value] [varchar](255) NOT NULL,
-  [description] [varchar](50) NOT NULL,
-  [data_dict_id] [smallint] NOT NULL,
-  [changelogdetail_id] [int] NOT NULL,
-  [changelog_id] [int] NOT NULL,
-  [alter_date] [datetime] NOT NULL
+  [changelogdetail_id] [int] NULL,
+  [alter_date] [datetime] NULL,
+  [description] [varchar](50) NULL,
+  [detail1_value] [varchar](255) NULL,
+  [data_dict_id] [smallint] NULL,
+  [changelog_id] [int] NULL
 )
 ON [PRIMARY]
 GO

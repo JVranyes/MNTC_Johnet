@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[EmarPatientResponse] (
-  [patient_response] [varchar](12) NOT NULL,
-  [is_deleted] [bit] NOT NULL,
-  [emarpatientresponse_id] [int] NOT NULL,
-  [bgcolor] [varchar](50) NOT NULL,
-  [as_taken] [bit] NOT NULL
+  [is_deleted] [bit] NULL,
+  [as_taken] [bit] NULL,
+  [bgcolor] [varchar](50) NULL,
+  [patient_response] [varchar](12) NULL,
+  [emarpatientresponse_id] [int] NULL
 )
 ON [PRIMARY]
 GO

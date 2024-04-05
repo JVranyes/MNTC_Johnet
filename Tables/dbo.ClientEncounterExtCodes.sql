@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[ClientEncounterExtCodes] (
-  [encounter_id] [int] NOT NULL,
-  [code] [varchar](12) NOT NULL,
-  [ClientEncounterExtCodesId] [int] NOT NULL,
-  [category] [varchar](50) NOT NULL
+  [ClientEncounterExtCodesId] [int] NULL,
+  [code] [varchar](12) NULL,
+  [category] [varchar](50) NULL,
+  [encounter_id] [int] NULL
 )
 ON [PRIMARY]
 GO

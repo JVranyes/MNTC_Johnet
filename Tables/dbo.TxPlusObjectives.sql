@@ -1,15 +1,17 @@
 ﻿CREATE TABLE [dbo].[TxPlusObjectives] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [txplusobjective_id] [int] NOT NULL,
-  [txplusgoal_id] [int] NOT NULL,
-  [target_date] [smalldatetime] NOT NULL,
-  [status] [varchar](300) NOT NULL,
-  [start_date] [smalldatetime] NOT NULL,
-  [order] [smallint] NOT NULL,
-  [inactive_reason] [varchar](300) NOT NULL,
-  [end_date] [smalldatetime] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL
+  [date_created] [datetime] NULL,
+  [status] [varchar](300) NULL,
+  [inactive_reason] [varchar](300) NULL,
+  [Inactive] [bit] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [datetime] NULL,
+  [end_date] [smalldatetime] NULL,
+  [target_date] [smalldatetime] NULL,
+  [start_date] [smalldatetime] NULL,
+  [order] [smallint] NULL,
+  [objective] [varchar](100) NULL,
+  [txplusgoal_id] [int] NULL,
+  [txplusobjective_id] [int] NULL
 )
 ON [PRIMARY]
 GO

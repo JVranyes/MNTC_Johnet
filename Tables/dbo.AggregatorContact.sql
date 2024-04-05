@@ -1,18 +1,18 @@
 ﻿CREATE TABLE [dbo].[AggregatorContact] (
-  [phone] [varchar](25) NOT NULL,
-  [last_name] [varchar](40) NOT NULL,
-  [is_primary] [bit] NOT NULL,
-  [is_deleted] [bit] NOT NULL,
-  [first_name] [varchar](35) NOT NULL,
-  [extension] [varchar](5) NOT NULL,
-  [email] [varchar](50) NOT NULL,
-  [deletedby_emp_id] [smallint] NOT NULL,
-  [date_deleted_utc] [datetime] NOT NULL,
-  [date_created_utc] [datetime] NOT NULL,
-  [createdby_emp_id] [smallint] NOT NULL,
-  [contact_type] [int] NOT NULL,
-  [contact_id] [int] NOT NULL,
-  [aggregator_id] [int] NOT NULL
+  [date_deleted_utc] [datetime] NULL,
+  [deletedby_emp_id] [smallint] NULL,
+  [date_created_utc] [datetime] NULL,
+  [createdby_emp_id] [smallint] NULL,
+  [is_deleted] [bit] NULL,
+  [is_primary] [bit] NULL,
+  [contact_type] [int] NULL,
+  [email] [varchar](50) NULL,
+  [extension] [varchar](5) NULL,
+  [phone] [varchar](25) NULL,
+  [last_name] [varchar](40) NULL,
+  [first_name] [varchar](35) NULL,
+  [aggregator_id] [int] NULL,
+  [contact_id] [int] NULL
 )
 ON [PRIMARY]
 GO

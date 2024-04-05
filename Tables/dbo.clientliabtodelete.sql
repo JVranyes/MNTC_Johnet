@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[clientliabtodelete] (
-  [clientliability_id] [int] NOT NULL
+  [clientliability_id] [int] NULL
 )
 ON [PRIMARY]
 GO

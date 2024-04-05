@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[DynamicFormGroup] (
-  [LastUpdated] [datetime2] NOT NULL,
-  [DynamicFormGroupId] [int] NOT NULL,
-  [ClientVisitTempId] [int] NOT NULL,
-  [ClientVisitId] [int] NOT NULL
+  [LastUpdated] [datetime2] NULL,
+  [ClientVisitId] [int] NULL,
+  [ClientVisitTempId] [int] NULL,
+  [DynamicFormGroupId] [int] NULL
 )
 ON [PRIMARY]
 GO

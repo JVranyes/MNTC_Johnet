@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[TxPlusStatus] (
-  [TxPlusStatus_ID] [tinyint] NOT NULL,
-  [Is_active] [bit] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [Code] [varchar](12) NOT NULL
+  [date_created] [datetime] NULL,
+  [Is_active] [bit] NULL,
+  [Code] [varchar](12) NULL,
+  [TxPlusStatus] [varchar](50) NULL,
+  [TxPlusStatus_ID] [tinyint] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[CustomRedXVisitTypes] (
-  [visittype_id] [smallint] NOT NULL,
-  [customredx_id] [smallint] NOT NULL
+  [visittype_id] [smallint] NULL,
+  [customredx_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

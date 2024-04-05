@@ -1,13 +1,17 @@
 ﻿CREATE TABLE [dbo].[ShiftExceptions] (
-  [utc_start_time] [datetime] NOT NULL,
-  [utc_shift_date] [datetime] NOT NULL,
-  [utc_end_time] [datetime] NOT NULL,
-  [utc_date_created] [datetime] NOT NULL,
-  [updatedbyemp_id] [smallint] NOT NULL,
-  [shiftexception_id] [int] NOT NULL,
-  [shiftemployee_id] [int] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [createdbyemp_id] [smallint] NOT NULL
+  [deleted] [bit] NULL,
+  [updatedbyemp_id] [smallint] NULL,
+  [utc_date_created] [datetime] NULL,
+  [createdbyemp_id] [smallint] NULL,
+  [date_created] [datetime] NULL,
+  [utc_end_time] [datetime] NULL,
+  [end_time] [datetime] NULL,
+  [utc_start_time] [datetime] NULL,
+  [start_time] [datetime] NULL,
+  [utc_shift_date] [datetime] NULL,
+  [shift_date] [datetime] NULL,
+  [shiftemployee_id] [int] NULL,
+  [shiftexception_id] [int] NULL
 )
 ON [PRIMARY]
 GO

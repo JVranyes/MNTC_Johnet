@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[PdmpNote] (
-  [Note] [nvarchar](200) NOT NULL,
-  [ModifiedOn] [datetime] NOT NULL,
-  [ModifiedBy] [smallint] NOT NULL,
-  [IsActive] [bit] NOT NULL,
-  [Id] [int] NOT NULL,
-  [CreatedOn] [datetime] NOT NULL,
-  [CreatedBy] [smallint] NOT NULL
+  [ModifiedBy] [smallint] NULL,
+  [ModifiedOn] [datetime] NULL,
+  [CreatedBy] [smallint] NULL,
+  [CreatedOn] [datetime] NULL,
+  [IsActive] [bit] NULL,
+  [Note] [nvarchar](200) NULL,
+  [Id] [int] NULL
 )
 ON [PRIMARY]
 GO

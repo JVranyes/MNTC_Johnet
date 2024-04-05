@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ClientVisitCCR] (
-  [clientvisitccr_id] [int] NOT NULL,
-  [clientvisit_id] [int] NOT NULL
+  [clientvisit_id] [int] NULL,
+  [clientvisitccr_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ApprovalRoleRoute] (
-  [visittype_id] [smallint] NOT NULL,
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [program_id] [smallint] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [approvalrole_route_id] [smallint] NOT NULL,
-  [adjustmenttype_id] [smallint] NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [datetime] NULL,
+  [adjustmenttype_id] [smallint] NULL,
+  [program_id] [smallint] NULL,
+  [visittype_id] [smallint] NULL,
+  [approvalrole_route_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

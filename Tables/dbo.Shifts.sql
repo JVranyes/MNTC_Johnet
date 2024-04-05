@@ -1,19 +1,22 @@
 ﻿CREATE TABLE [dbo].[Shifts] (
-  [utc_sched_start_time] [datetime] NOT NULL,
-  [utc_sched_shift_date] [datetime] NOT NULL,
-  [utc_sched_end_time] [datetime] NOT NULL,
-  [utc_dateupdated] [datetime] NOT NULL,
-  [utc_datecreated] [datetime] NOT NULL,
-  [updatedbyemp_id] [smallint] NOT NULL,
-  [startedbyemp_id] [smallint] NOT NULL,
-  [shift_status] [int] NOT NULL,
-  [shift_name] [varchar](250) NOT NULL,
-  [shift_id] [int] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [date_created] [datetime] NOT NULL,
-  [createdbyemp_id] [smallint] NOT NULL,
-  [bedboardfacility_id] [smallint] NOT NULL
+  [shift_status] [int] NULL,
+  [updatedbyemp_id] [smallint] NULL,
+  [startedbyemp_id] [smallint] NULL,
+  [createdbyemp_id] [smallint] NULL,
+  [deleted] [bit] NULL,
+  [utc_sched_end_time] [datetime] NULL,
+  [sched_end_time] [datetime] NULL,
+  [utc_sched_start_time] [datetime] NULL,
+  [sched_start_time] [datetime] NULL,
+  [utc_sched_shift_date] [datetime] NULL,
+  [sched_shift_date] [datetime] NULL,
+  [utc_dateupdated] [datetime] NULL,
+  [date_updated] [datetime] NULL,
+  [utc_datecreated] [datetime] NULL,
+  [date_created] [datetime] NULL,
+  [shift_name] [varchar](250) NULL,
+  [bedboardfacility_id] [smallint] NULL,
+  [shift_id] [int] NULL
 )
 ON [PRIMARY]
 GO

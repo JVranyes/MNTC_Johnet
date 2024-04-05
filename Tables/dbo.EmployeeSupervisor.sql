@@ -1,8 +1,10 @@
 ﻿CREATE TABLE [dbo].[EmployeeSupervisor] (
-  [supervisor_emp_id] [smallint] NOT NULL,
-  [slevel_emp_id] [int] NOT NULL,
-  [is_indirect] [bit] NOT NULL,
-  [employeesupervisor_id] [int] NOT NULL
+  [slevel_emp_id] [int] NULL,
+  [slevel] [tinyint] NULL,
+  [is_indirect] [bit] NULL,
+  [emp_id] [smallint] NULL,
+  [supervisor_emp_id] [smallint] NULL,
+  [employeesupervisor_id] [int] NULL
 )
 ON [PRIMARY]
 GO

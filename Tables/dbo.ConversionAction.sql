@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ConversionAction] (
-  [label] [varchar](50) NOT NULL,
-  [conversionaction_id] [int] NOT NULL,
-  [clientsideid] [varchar](5) NOT NULL
+  [clientsideid] [varchar](5) NULL,
+  [label] [varchar](50) NULL,
+  [conversionaction_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[RxRequestType] (
-  [rxrequesttype_id] [int] NOT NULL,
-  [rxrequesttype_description] [nvarchar](100) NOT NULL
+  [rxrequesttype_description] [nvarchar](100) NULL,
+  [rxrequesttype_id] [int] NULL
 )
 ON [PRIMARY]
 GO

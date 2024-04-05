@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ProgramRole] (
-  [updated_by] [smallint] NOT NULL,
-  [role_id] [smallint] NOT NULL,
-  [programrole_id] [int] NOT NULL,
-  [program_id] [smallint] NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL
+  [updated_by] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [deleted] [bit] NULL,
+  [role_id] [smallint] NULL,
+  [program_id] [smallint] NULL,
+  [programrole_id] [int] NULL
 )
 ON [PRIMARY]
 GO

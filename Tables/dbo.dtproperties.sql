@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[dtproperties] (
-  [version] [int] NOT NULL,
-  [value] [varchar](255) NOT NULL,
-  [uvalue] [nvarchar](255) NOT NULL,
-  [property] [varchar](64) NOT NULL,
-  [objectid] [int] NOT NULL
+  [uvalue] [nvarchar](255) NULL,
+  [version] [int] NULL,
+  [value] [varchar](255) NULL,
+  [property] [varchar](64) NULL,
+  [objectid] [int] NULL,
+  [id] [int] NULL
 )
 ON [PRIMARY]
 GO

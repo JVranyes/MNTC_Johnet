@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[PlannerTemplateLine] (
-  [visittype_id] [smallint] NOT NULL,
-  [templateline_id] [int] NOT NULL,
-  [template_id] [smallint] NOT NULL,
-  [start_time] [smalldatetime] NOT NULL,
-  [geoareas_id] [smallint] NOT NULL,
-  [end_time] [smalldatetime] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [date_created] [smalldatetime] NOT NULL
+  [date_updated] [smalldatetime] NULL,
+  [date_created] [smalldatetime] NULL,
+  [geoareas_id] [smallint] NULL,
+  [visittype_id] [smallint] NULL,
+  [end_time] [smalldatetime] NULL,
+  [start_time] [smalldatetime] NULL,
+  [template_id] [smallint] NULL,
+  [templateline_id] [int] NULL
 )
 ON [PRIMARY]
 GO

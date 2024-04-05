@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[HL7Map] (
-  [specialfieldcode] [varchar](50) NOT NULL,
-  [sourcefield] [varchar](250) NOT NULL,
-  [sortorder] [int] NOT NULL,
-  [hl7config_id] [int] NOT NULL,
-  [hl7_map_id] [int] NOT NULL
+  [sortorder] [int] NULL,
+  [specialfieldcode] [varchar](50) NULL,
+  [sourcefield] [varchar](250) NULL,
+  [hl7config_id] [int] NULL,
+  [hl7_map_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[Credentials] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [is_paycode] [bit] NOT NULL,
-  [external_id] [varchar](50) NOT NULL,
-  [do_not_print] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [credentials] [varchar](50) NOT NULL,
-  [credential_id] [smallint] NOT NULL,
-  [credential_group] [varchar](12) NOT NULL
+  [is_paycode] [bit] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [external_id] [varchar](50) NULL,
+  [do_not_print] [bit] NULL,
+  [credential_group] [varchar](12) NULL,
+  [credentials] [varchar](50) NULL,
+  [credential_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

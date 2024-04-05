@@ -1,10 +1,11 @@
 ﻿CREATE TABLE [dbo].[PlannerClient] (
-  [visit_status] [varchar](15) NOT NULL,
-  [planclient_id] [int] NOT NULL,
-  [plan_id] [int] NOT NULL,
-  [payment_id] [int] NOT NULL,
-  [export_date] [smalldatetime] NOT NULL,
-  [eligibility_id] [int] NOT NULL
+  [payment_id] [int] NULL,
+  [export_date] [smalldatetime] NULL,
+  [eligibility_id] [int] NULL,
+  [visit_status] [varchar](15) NULL,
+  [client_id] [int] NULL,
+  [plan_id] [int] NULL,
+  [planclient_id] [int] NULL
 )
 ON [PRIMARY]
 GO

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[EmpApprovalRole] (
-  [emp_id] [smallint] NOT NULL,
-  [approvalrole_id] [smallint] NOT NULL
+  [approvalrole_id] [smallint] NULL,
+  [emp_id] [smallint] NULL
 )
 ON [PRIMARY]
 GO

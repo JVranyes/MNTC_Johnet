@@ -1,11 +1,12 @@
 ﻿CREATE TABLE [dbo].[ClientVisitInsurance] (
-  [payer_id] [smallint] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [clientins_id] [int] NOT NULL,
-  [billing_sequence] [tinyint] NOT NULL,
-  [billing_ord] [tinyint] NOT NULL,
-  [batch_count] [tinyint] NOT NULL,
-  [auth_release] [bit] NOT NULL
+  [auth_release] [bit] NULL,
+  [billing_sequence] [tinyint] NULL,
+  [payer_id] [smallint] NULL,
+  [batch_count] [tinyint] NULL,
+  [billing_ord] [tinyint] NULL,
+  [clientins_id] [int] NULL,
+  [clientvisit_id] [int] NULL,
+  [info_blocking_exception_id] [int] NULL
 )
 ON [PRIMARY]
 GO

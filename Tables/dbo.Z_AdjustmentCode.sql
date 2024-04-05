@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [dbo].[Z_AdjustmentCode] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [pr_override_liability] [bit] NOT NULL,
-  [inactive] [bit] NOT NULL,
-  [disallowed_group] [varchar](10) NOT NULL,
-  [description] [varchar](255) NOT NULL,
-  [date_updated] [datetime] NOT NULL,
-  [code] [varchar](7) NOT NULL,
-  [adjustmentcode_id] [int] NOT NULL,
-  [action_type] [varchar](10) NOT NULL
+  [updatedby_emp_id] [smallint] NULL,
+  [date_updated] [datetime] NULL,
+  [disallowed_group] [varchar](10) NULL,
+  [pr_override_liability] [bit] NULL,
+  [inactive] [bit] NULL,
+  [description] [varchar](255) NULL,
+  [action_type] [varchar](10) NULL,
+  [code] [varchar](7) NULL,
+  [adjustmentcode_id] [int] NULL
 )
 ON [PRIMARY]
 GO

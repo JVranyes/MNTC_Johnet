@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[AmendmentStatus] (
-  [name] [varchar](20) NOT NULL,
-  [description] [varchar](250) NOT NULL,
-  [amendmentstatus_id] [int] NOT NULL
+  [description] [varchar](250) NULL,
+  [name] [varchar](20) NULL,
+  [amendmentstatus_id] [int] NULL
 )
 ON [PRIMARY]
 GO

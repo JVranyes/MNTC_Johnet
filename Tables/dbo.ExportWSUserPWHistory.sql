@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[ExportWSUserPWHistory] (
-  [value] [varchar](40) NOT NULL,
-  [key] [varchar](40) NOT NULL,
-  [exportwsuserpwhistory_id] [int] NOT NULL,
-  [date_created_utc] [datetime] NOT NULL
+  [date_created_utc] [datetime] NULL,
+  [value] [varchar](40) NULL,
+  [key] [varchar](40) NULL,
+  [exportwsuserpwhistory_id] [int] NULL
 )
 ON [PRIMARY]
 GO

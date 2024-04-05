@@ -1,14 +1,14 @@
 ﻿CREATE TABLE [dbo].[ErrorLog] (
-  [userid] [int] NOT NULL,
-  [ObjectName] [varchar](400) NOT NULL,
-  [ObjectID] [int] NOT NULL,
-  [ObjectDescription] [varchar](400) NOT NULL,
-  [LogDate] [datetime] NOT NULL,
-  [ErrorLogID] [int] NOT NULL,
-  [ErrorLine] [int] NOT NULL,
-  [ErrorCode] [int] NOT NULL,
-  [clientvisit_id] [int] NOT NULL,
-  [client_id] [int] NOT NULL
+  [ObjectDescription] [varchar](400) NULL,
+  [clientvisit_id] [int] NULL,
+  [client_id] [int] NULL,
+  [userid] [int] NULL,
+  [ErrorLine] [int] NULL,
+  [ErrorCode] [int] NULL,
+  [ObjectName] [varchar](400) NULL,
+  [ObjectID] [int] NULL,
+  [LogDate] [datetime] NULL,
+  [ErrorLogID] [int] NULL
 )
 ON [PRIMARY]
 GO

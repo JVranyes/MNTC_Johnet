@@ -1,16 +1,17 @@
 ﻿CREATE TABLE [dbo].[ClientPaymentPlanSignature] (
-  [updatedby_emp_id] [smallint] NOT NULL,
-  [signature_datetime] [smalldatetime] NOT NULL,
-  [print_name] [varchar](75) NOT NULL,
-  [ord] [tinyint] NOT NULL,
-  [is_injected] [bit] NOT NULL,
-  [employeesignature_id] [int] NOT NULL,
-  [emp_name] [varchar](75) NOT NULL,
-  [deleted] [bit] NOT NULL,
-  [date_updated] [smalldatetime] NOT NULL,
-  [clientpaymentplansignature_id] [int] NOT NULL,
-  [clientpaymentplan_id] [int] NOT NULL,
-  [category_id] [int] NOT NULL
+  [deleted] [bit] NULL,
+  [date_updated] [smalldatetime] NULL,
+  [updatedby_emp_id] [smallint] NULL,
+  [emp_name] [varchar](75) NULL,
+  [employeesignature_id] [int] NULL,
+  [emp_id] [smallint] NULL,
+  [print_name] [varchar](75) NULL,
+  [is_injected] [bit] NULL,
+  [signature_datetime] [smalldatetime] NULL,
+  [category_id] [int] NULL,
+  [ord] [tinyint] NULL,
+  [clientpaymentplan_id] [int] NULL,
+  [clientpaymentplansignature_id] [int] NULL
 )
 ON [PRIMARY]
 GO

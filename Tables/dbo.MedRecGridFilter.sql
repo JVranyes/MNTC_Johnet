@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[MedRecGridFilter] (
-  [ShowSuspended] [bit] NOT NULL,
-  [ShowDiscontinued] [bit] NOT NULL,
-  [MedRecGridFilterId] [int] NOT NULL,
-  [EmployeeId] [smallint] NOT NULL
+  [ShowDiscontinued] [bit] NULL,
+  [ShowSuspended] [bit] NULL,
+  [EmployeeId] [smallint] NULL,
+  [MedRecGridFilterId] [int] NULL
 )
 ON [PRIMARY]
 GO

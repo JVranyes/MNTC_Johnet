@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[ClientVisitOrphan] (
-  [orphan_ssn] [varchar](11) NOT NULL,
-  [orphan_phone] [varchar](25) NOT NULL,
-  [orphan_external_id] [varchar](50) NOT NULL,
-  [orphan_dob] [smalldatetime] NOT NULL,
-  [orphan_address] [varchar](100) NOT NULL,
-  [clientvisit_id] [int] NOT NULL
+  [orphan_address] [varchar](100) NULL,
+  [orphan_phone] [varchar](25) NULL,
+  [orphan_dob] [smalldatetime] NULL,
+  [orphan_ssn] [varchar](11) NULL,
+  [orphan_external_id] [varchar](50) NULL,
+  [clientvisit_id] [int] NULL
 )
 ON [PRIMARY]
 GO
