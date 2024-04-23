@@ -21,3 +21,6 @@ ELSE BEGIN
  EXEC(@P1)
 END
 GO
+
+GRANT EXECUTE ON [dbo].[Credible_XML_Download] TO [General]
+GO

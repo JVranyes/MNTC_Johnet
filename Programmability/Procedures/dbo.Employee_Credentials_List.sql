@@ -1,6 +1,5 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-
 CREATE PROCEDURE [dbo].[Employee_Credentials_List]
 
 
@@ -26,4 +25,7 @@ WHERE email LIKE '%mntc.org'  AND term_date IS NULL AND emp_status = 'ACTIVE'
 ORDER BY last_name, first_name
 
 
+GO
+
+GRANT EXECUTE ON [dbo].[Employee_Credentials_List] TO [General]
 GO
