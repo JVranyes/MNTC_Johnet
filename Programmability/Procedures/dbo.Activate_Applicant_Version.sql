@@ -1,6 +1,5 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-
 CREATE PROCEDURE [dbo].[Activate_Applicant_Version] 
 @sApplicantGUID varchar(50),
 @sRet varchar(50) output,
@@ -257,4 +256,7 @@ AS	--Modified 1/09/2006  by FrankDeMarco (removed GRH table reference)
 LABEL_END:
 
 SET @sRet = @sClientGUID
+GO
+
+GRANT EXECUTE ON [dbo].[Activate_Applicant_Version] TO [General]
 GO

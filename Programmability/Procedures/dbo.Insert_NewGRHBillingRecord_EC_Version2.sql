@@ -9,3 +9,6 @@ AS	-- created 10/31/2006 by FrankDeMarco  - inserts new record in forGRHBilling 
 	Insert Into [Student Database_KioskApp].dbo.GRHBilling (IntakeGUID)	VALUES (@sIntakeGUID)
 
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_NewGRHBillingRecord_EC_Version2] TO [General]
+GO

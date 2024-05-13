@@ -49,7 +49,7 @@ BEGIN
 
 	IF(@sCopyLast = 'Yes')
 		BEGIN			
-			SET @sLastApplicationGUID = (SELECT dbo.fun_GetMostRecentApplicationGUID(@sApplicantGUID))
+			SET @sLastApplicationGUID = (SELECT [Student Database_KioskApp].dbo.fun_GetMostRecentApplicationGUID(@sApplicantGUID))
 /*
 -- ********************************** MostRecentApplicationID is not being set.   Still trying to find out where this is being populated.
 -- ***************************************  Why don't these get populated? ****** where is the data coming from?
@@ -281,4 +281,8 @@ END
 
 	WHERE ApplicantGUID = @sApplicantGUID
 
+
+GO
+
+GRANT EXECUTE ON [dbo].[Insert_ApplicationRecord_Version_10] TO [General]
 GO

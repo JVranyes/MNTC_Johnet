@@ -20,3 +20,6 @@ BEGIN
 
 END
 GO
+
+GRANT EXECUTE ON [dbo].[Update_ShortTermCounselor] TO [General]
+GO

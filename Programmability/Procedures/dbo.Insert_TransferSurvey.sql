@@ -27,3 +27,6 @@ IF @iCount = 0
 		WHERE IntakeGUID = @sIntakeGUID
 	END
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_TransferSurvey] TO [General]
+GO

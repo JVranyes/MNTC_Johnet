@@ -25,7 +25,7 @@ CREATE PROCEDURE [dbo].[Insert_ApplicationRecord_Version_9]
 
 	IF(@sCopyLast = 'Yes')
 		BEGIN			
-			SET @sLastApplicationGUID = (SELECT dbo.fun_GetMostRecentApplicationGUID(@sApplicantGUID))
+			SET @sLastApplicationGUID = (SELECT [Student Database_KioskApp].dbo.fun_GetMostRecentApplicationGUID(@sApplicantGUID))
 
 			INSERT INTO [Student Database_KioskApp].dbo.Applications(ApplicationGUID,ApplicantGUID, ApplicationStatus, DateCreated, AddressAtTimeOfApp, CityAtTimeOfApp, StateAtTimeOfApp
 				, ZipAtTimeOfApp, CountyAtTimeOfApp, PhoneAtTimeOfApp,ApplicationRecordCopiedFromPriorRecord,Area)
@@ -225,4 +225,8 @@ CREATE PROCEDURE [dbo].[Insert_ApplicationRecord_Version_9]
 	WHERE ApplicantGUID = @sApplicantGUID
 
 
+
+GO
+
+GRANT EXECUTE ON [dbo].[Insert_ApplicationRecord_Version_9] TO [General]
 GO

@@ -14,3 +14,6 @@ AS	--Modified 3/28/2007 by FrankDeMarco
 		INSERT INTO [Student Database_KioskApp].dbo.LevelHistory (IntakeGUID, LevelNumber, StartDate, ExpDate, AbsenceCheckDate, LevelAbsenceCount) 
 		VALUES (@sIntakeGUID, @iLevelNumber, @dStartDate, @dExpDate, @dStartDate, 0)
 GO
+
+GRANT EXECUTE ON [dbo].[Set_LevelHistoryStartDate_Version_3] TO [General]
+GO

@@ -35,3 +35,6 @@ UPDATE [Student Database_KioskApp].dbo.GRHBilling
 		dtGAEffective = (SELECT dtGAEffective FROM [Student Database_KioskApp].dbo.GRHBilling WHERE IntakeGUID = @sOldIntakeGUID) 
 	WHERE IntakeGUID = @sNewIntakeGUID
 GO
+
+GRANT EXECUTE ON [dbo].[Update_GRHBilling_Version2] TO [General]
+GO

@@ -1,6 +1,6 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-CREATE PROCEDURE [dbo].[Insert_Appointment_Credible_Import]
+CREATE PROCEDURE [dbo].[Insert_Appointment_Version_Credible_Import]
 
 @sClientGUID varchar(50),
 @dtDate smalldatetime,
@@ -44,5 +44,5 @@ CREATE PROCEDURE [dbo].[Insert_Appointment_Credible_Import]
 
 GO
 
-GRANT EXECUTE ON [dbo].[Insert_Appointment_Credible_Import] TO [General]
+GRANT EXECUTE ON [dbo].[Insert_Appointment_Version_Credible_Import] TO [General]
 GO

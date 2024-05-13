@@ -14,3 +14,6 @@ BEGIN
 			where ClientGUID = @sClientGUID
 END
 GO
+
+GRANT EXECUTE ON [dbo].[Set_AlumniNextContactDate] TO [General]
+GO

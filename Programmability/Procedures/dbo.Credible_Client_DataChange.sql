@@ -27,3 +27,6 @@ WHERE ApplicantGUID = @sApplicantGUID
 
 --PRINT 'Client Update : ' + CONVERT(varchar,@MatchRet) + ' sLastName: ' + CONVERT(varchar,@sLastName) + ' sFirstName: ' + CONVERT(varchar,@sFirstName) + ' Birth Date: ' + CONVERT(varchar,@dtBirthDate)
 GO
+
+GRANT EXECUTE ON [dbo].[Credible_Client_DataChange] TO [General]
+GO

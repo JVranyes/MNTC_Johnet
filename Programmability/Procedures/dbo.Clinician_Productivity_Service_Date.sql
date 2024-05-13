@@ -1,6 +1,7 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-CREATE PROCEDURE [dbo].[Clinician_Productivity_Second]
+
+CREATE PROCEDURE [dbo].[Clinician_Productivity_Service_Date]
 
 @param1 DATETIME,
 @param2 DATETIME
@@ -71,6 +72,7 @@ From Z_ServiceLedger
   Inner Join LookupDict On Clients.dd13 = LookupDict.lookup_id
 Where ClientVisit.rev_timein Between @param1 And @param2 AND GeoAreas.geo_desc LIKE '%Rock%'
 Order By  ClientVisit.emp_name, location_desc,Clients.last_name, Clients.first_name, Z_ServiceLedger.accounting_date DESC 
+
 
 
 

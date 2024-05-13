@@ -10,3 +10,6 @@ INSERT INTO [Student Database_KioskApp].dbo.MonthlyCheckups(IntakeGUID) VALUES(@
 
 
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_AssessmentRecord_Version2] TO [General]
+GO

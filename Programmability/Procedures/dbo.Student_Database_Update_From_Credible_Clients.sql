@@ -102,7 +102,9 @@ DECLARE	@return_value2 int
 
 IF (@sApplicantGUID2 IS NULL)
 BEGIN
-exec @return_value2 = [Johnet].dbo.Insert_ApplicantRecord_Version_4_Credible @last_name, @first_name, @mi, @ssnin, @dob, @sex, @sCallLogGUID, @sGUID2 OUTPUT
+--exec @return_value2 = [Johnet].dbo.Insert_ApplicantRecord_Version_4_Credible @last_name, @first_name, @mi, @ssnin, @dob, @sex, @sCallLogGUID, @sGUID2 OUTPUT
+PRINT 'Last Name: ' + CONVERT(varchar,@last_name) + ' First Name: ' +  CONVERT(varchar,@first_name) + ' MI: ' + CONVERT(varchar,@mi) + ' SSN: ' +  CONVERT(varchar,@ssnin) + ' DOB: ' + CONVERT(varchar,@dob) + ' Sex: ' + CONVERT(varchar,@sex) + ' CallLogGUID: ' + CONVERT(varchar,@sCallLogGUID)
+
 END
 ELSE IF (@sApplicantGUID2 IS NOT NULL)
 BEGIN
@@ -337,4 +339,8 @@ END
 
 
 
+
+GO
+
+GRANT EXECUTE ON [dbo].[Student_Database_Update_From_Credible_Clients] TO [General]
 GO

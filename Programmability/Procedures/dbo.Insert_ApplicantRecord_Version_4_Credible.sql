@@ -36,4 +36,8 @@ SET @sCallLogGUID3 = CAST(@sCallLogGUID2 AS uniqueidentifier)
     
 
 	SELECT @sGuid = @sNewGUID
+
+GO
+
+GRANT EXECUTE ON [dbo].[Insert_ApplicantRecord_Version_4_Credible] TO [General]
 GO

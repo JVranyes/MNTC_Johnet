@@ -24,3 +24,6 @@ END
 
 
 GO
+
+GRANT EXECUTE ON [dbo].[Update_InitialBuildingID] TO [General]
+GO

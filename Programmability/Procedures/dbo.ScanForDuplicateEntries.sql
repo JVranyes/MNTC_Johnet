@@ -1,6 +1,5 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-
 CREATE PROCEDURE [dbo].[ScanForDuplicateEntries]
 AS
 
@@ -16,4 +15,9 @@ SELECT COUNT(*) AS Duplicate
   FROM [Johnet].[dbo].[Clients]
 GROUP BY ssn, dob, last_name, first_name, mi, age, sex, client_status
 HAVING COUNT (*) > 1 AND [client_status]='ACTIVE'
+
+
+GO
+
+GRANT EXECUTE ON [dbo].[ScanForDuplicateEntries] TO [General]
 GO

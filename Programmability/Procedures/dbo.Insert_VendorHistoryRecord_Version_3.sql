@@ -39,3 +39,6 @@ AS	--modified 2/10/2006 by FrankDeMarco
 	UPDATE [Student Database_KioskApp].dbo.Intake_and_Discharge
 	SET [Student Database_KioskApp].dbo.Intake_and_Discharge.FinalBuildingID = @iBuildingID WHERE [Student Database_KioskApp].dbo.Intake_and_Discharge.IntakeGUID = @sIntakeGUID
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_VendorHistoryRecord_Version_3] TO [General]
+GO

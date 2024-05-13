@@ -1,6 +1,5 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-
 CREATE PROCEDURE [dbo].[Get_NewClientID] 
 @sClientGUID varchar(50),
 @sID varchar(10) output
@@ -13,4 +12,7 @@ AS
 	Values(GetDate(),@sClientGUID,'Client')
 
 	SELECT @sID = 'C' + CAST(SCOPE_IDENTITY() as varchar(9))
+GO
+
+GRANT EXECUTE ON [dbo].[Get_NewClientID] TO [General]
 GO

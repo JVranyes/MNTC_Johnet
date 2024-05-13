@@ -32,3 +32,6 @@ IF(@iCount =0)
 
 
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_Legal_Version_4] TO [General]
+GO

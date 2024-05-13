@@ -174,3 +174,6 @@ END
 SET @sRet = @sIntakeGUID
 
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_NewEntryDate_Version_13] TO [General]
+GO

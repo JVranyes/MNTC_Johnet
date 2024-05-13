@@ -11,3 +11,6 @@ INSERT INTO [Student Database_KioskApp].dbo.LongText(RefGUID,Type) VALUES(@sInta
 INSERT INTO [Student Database_KioskApp].dbo.LongText(RefGUID,Type) VALUES(@sIntakeGUID,'LC_Assessment_FamilyHistory')
 INSERT INTO [Student Database_KioskApp].dbo.LongText(RefGUID,Type) VALUES(@sIntakeGUID,'LC_Assessment_ChemicalHistory')
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_LCAssessmentRecord] TO [General]
+GO

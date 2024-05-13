@@ -23,3 +23,6 @@ FROM [Student Database_KioskApp].dbo.Contacts_Releases_Apps
 WHERE (ApplicationGUID = @sApplicationGUID)
 ORDER BY Category, Type
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_Contacts_Releases_Version3] TO [General]
+GO

@@ -138,3 +138,6 @@ ELSE
 --	END
 --END
 GO
+
+GRANT EXECUTE ON [dbo].[Add_AlumniRecord_Version_4] TO [General]
+GO

@@ -62,4 +62,8 @@ SELECT
 --PRINT 'Match Return2: ' + CONVERT(varchar,@MatchRet) + ' sLastName: ' + CONVERT(varchar,@sLastName) + ' sFirstName: ' + CONVERT(varchar,@sFirstName) + ' Birth Date: ' + CONVERT(varchar,@dtBirthDate) +  ' Client Updated: ' + CONVERT(varchar,@date_updated,106) 
 
 
+
+GO
+
+GRANT EXECUTE ON [dbo].[rs_SimilarApplicants_Version3_Credible1] TO [General]
 GO

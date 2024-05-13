@@ -64,7 +64,6 @@ From Z_ServiceLedger
   Inner Join LookupDict On Clients.dd13 = LookupDict.lookup_id
 Where Z_ServiceLedger.accounting_date Between @param1 And @param2
 Order By Z_Payment.date_entered
-GO
 
-GRANT EXECUTE ON [dbo].[1010 - Program] TO [General]
+
 GO

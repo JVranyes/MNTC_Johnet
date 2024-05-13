@@ -26,3 +26,6 @@ ORDER BY Clients.date_updated DESC
 END
 
 GO
+
+GRANT EXECUTE ON [dbo].[JohnetTesting] TO [General]
+GO

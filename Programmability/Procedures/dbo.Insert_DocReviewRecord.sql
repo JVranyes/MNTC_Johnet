@@ -10,3 +10,6 @@ AS
 	Insert Into [Student Database_KioskApp].dbo.DocReviewData(IntakeGUID)	VALUES (@sIntakeGUID)
 
 GO
+
+GRANT EXECUTE ON [dbo].[Insert_DocReviewRecord] TO [General]
+GO

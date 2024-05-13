@@ -82,6 +82,9 @@
   [dd3] [smallint] NULL,
   [dd2] [smallint] NULL,
   [dd1] [smallint] NULL,
+  [textlong3] [varchar](1000) NULL,
+  [textlong2] [varchar](1000) NULL,
+  [textlong1] [varchar](1000) NULL,
   [text40] [varchar](100) NULL,
   [text39] [varchar](100) NULL,
   [text38] [varchar](100) NULL,
@@ -142,6 +145,7 @@
   [is_not_emp] [bit] NULL,
   [last_svc_date] [smalldatetime] NULL,
   [first_svc_date] [smalldatetime] NULL,
+  [notes] [varchar](max) NULL,
   [term_date] [smalldatetime] NULL,
   [hire_date] [smalldatetime] NULL,
   [reporting_unit] [varchar](10) NULL,
@@ -204,7 +208,8 @@
   [first_name] [varchar](35) NULL,
   [emp_status] [varchar](10) NULL,
   [external_id] [varchar](15) NULL,
-  [emp_id] [smallint] NULL
+  [emp_id] [int] NULL
 )
 ON [PRIMARY]
+TEXTIMAGE_ON [PRIMARY]
 GO

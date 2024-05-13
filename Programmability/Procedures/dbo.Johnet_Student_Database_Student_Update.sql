@@ -250,3 +250,6 @@ LABEL_END:
 
 SET @sRet = @sClientGUID
 GO
+
+GRANT EXECUTE ON [dbo].[Johnet_Student_Database_Student_Update] TO [General]
+GO
