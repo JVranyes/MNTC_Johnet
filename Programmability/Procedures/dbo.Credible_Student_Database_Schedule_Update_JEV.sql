@@ -1,6 +1,5 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
-
 CREATE PROCEDURE [dbo].[Credible_Student_Database_Schedule_Update_JEV]
 
 AS
@@ -143,7 +142,7 @@ SET @iAppointmentTypeID = 24056
 SET @sLocation = @pnote
 SET @sAppointmentWith = CONVERT(varchar,(@eefirst_name + ' ' + @eelast_name))
 --SET @sAddedBy = CONVERT(varchar,(@e2first_name + ' ' + @e2last_name)) 
-SET @sAddedBy = 'Johnny V'
+SET @sAddedBy = 'Credible Import'
 SET @sClientGUIDI = @sClientGUID
 SET @sState = 'MN'
 
@@ -173,6 +172,7 @@ END
 
 SET @RowCount -= 1;  --END ROW COUNTS
 END
+
 
 
 GO
