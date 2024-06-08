@@ -21,6 +21,7 @@ SELECT
 , s.action AS ACTION
 , p.description AS PROFILEDESCR
 , s.description AS SECURITYDESCR
+, te.username AS USERNAME
 
 
 
@@ -46,6 +47,7 @@ SELECT
 , s.action AS ACTION
 , p.description AS PROFILEDESCR  
 , s.description AS SECURITYDESCR
+, e.username AS USERNAME
 
 
 FROM [Johnet].dbo.Employees e
@@ -54,6 +56,7 @@ LEFT JOIN ProfileSecurity ps ON ps.profile_id = p.profile_id
 LEFT JOIN Security s ON s.security_id = ps.security_id
 WHERE e.email NOT LIKE '%cred%' AND e.emp_status <> 'INACTIVE'
 )
+
 
 
 
