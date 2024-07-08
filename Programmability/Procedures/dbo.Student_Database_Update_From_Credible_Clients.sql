@@ -3,7 +3,7 @@ GO
 CREATE PROCEDURE [dbo].[Student_Database_Update_From_Credible_Clients]
 AS
 
-declare @Enumerator table (Elast_name nvarchar(40), Efirst_Name nvarchar(40), Emiddle_name nvarchar(25), EBday smalldatetime, ESsn varchar(11), ESex int, Eclient_status_date smalldatetime, Eaddress1 varchar(50), Ecity varchar(50), Estate varchar(3), Ezip varchar(10), Ehome_phone varchar(50), Eteams nvarchar(50), Erace_omb int, Elookup_desc nvarchar(150), EOrder int, Edate_updated datetime, Edate_created datetime)
+declare @Enumerator table (Elast_name nvarchar(40), Efirst_Name nvarchar(40), Emiddle_name nvarchar(25), EBday smalldatetime, ESsn varchar(11), ESex int, Eclient_status_date smalldatetime, Eaddress1 varchar(50), Ecity varchar(50), Estate varchar(3), Ezip varchar(10), Ehome_phone varchar(50), Eteams varchar(500), Erace_omb int, Elookup_desc nvarchar(150), EOrder int, Edate_updated datetime, Edate_created datetime)
 
 insert into @Enumerator
 select last_name, first_name, mi, dob, ssn,
@@ -336,6 +336,7 @@ END
 SET @RowCount -= 1;  --END ROW COUNTS
 
 END
+
 
 
 
