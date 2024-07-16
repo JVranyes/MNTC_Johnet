@@ -1,9 +1,9 @@
 ﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
 -- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
+-- Author:		<Vranyes, John>
+-- Create date: <7/10/2024>
+-- Description:	<This is the SQL piece that sits on the Credible Web Service>
 -- =============================================
 CREATE PROCEDURE [dbo].[Credible_XML_Download]
 @param1 varchar(max)
@@ -20,6 +20,7 @@ IF @param1 IS NULL
 ELSE BEGIN
  EXEC(@P1)
 END
+
 GO
 
 GRANT EXECUTE ON [dbo].[Credible_XML_Download] TO [General]

@@ -46,7 +46,10 @@ SELECT TABLE_NAME
       FROM Johnet.dbo.Credible_Database_Schema_Columns_DataTypesSizes
 --WHERE TABLE_NAME NOT LIKE '%ZFORM%' AND CHARACTER_MAXIMUM_LENGTH NOT LIKE '%[^0-9]%' AND TABLE_SCHEMA = 'dbo'
 
-WHERE TABLE_NAME LIKE '%Employee%' AND CHARACTER_MAXIMUM_LENGTH NOT LIKE '%[^0-9].*' AND TABLE_SCHEMA = 'dbo'
+
+--**************************HELLO****************MAKE**********SURE*******TABLE_NAME**********IS*********SET*
+
+WHERE TABLE_NAME LIKE '%Error%' AND CHARACTER_MAXIMUM_LENGTH NOT LIKE '%[^0-9].*' AND TABLE_SCHEMA = 'dbo'
 ORDER BY TABLE_NAME, CONVERT(int,REPLACE(ORDINAL_POSITION,',',''))
 --WHERE TABLE_SCHEMA = 'dbo'
 
@@ -76,8 +79,10 @@ begin
 set @now = current_timestamp
 END 
 
-IF @sTABLE_NAME = 'ClientVisitBillingDeleted'
-PRINT 'TRANSITION WHY?'
+
+--
+--IF @sTABLE_NAME = 'ClientVisitBillingDeleted'
+--PRINT 'TRANSITION WHY?'
 
 
 IF @sNTABLE_NAME <> @sTABLE_NAME
@@ -100,7 +105,7 @@ BEGIN TRY
 --   EXEC @return_value = @sqlFinalCreateStatement
      EXEC (@sqlFinalCreateStatement)
 --IF @return_value <> 0
-
+PRINT 'Executed: ' + CONVERT(varchar,LEN(@sqlFinalCreateStatement)) + ' '  + @sqlFinalCreateStatement
 --   PRINT 'There was an ' + CONVERT(varchar,@return_value) + ' error executing: ' + @sqlFinalCreateStatement 
 END TRY
 BEGIN CATCH
@@ -116,9 +121,9 @@ SET @i = @i + 1
 
 END
 
-
-IF @sTABLE_NAME = 'Z_Payment'
-PRINT 'WHY?'
+--
+--IF @sTABLE_NAME = 'Z_Payment'
+--PRINT 'WHY?'
 
 
 SET @sCHARACTER_MAXIMUM_LENGTH_FIXED = '(' + REPLACE(REPLACE(@sCHARACTER_MAXIMUM_LENGTH,',',''),'-1','max') + ')'
@@ -142,9 +147,16 @@ BEGIN
 SELECT @sqlTableColumnCreate2 = @sqlTableColumnCreate2 + '"'+ @sCOLUMN_NAME + '" '+ @sDATA_TYPE + @sCHARACTER_MAXIMUM_LENGTH_FIXED +  ', '
 END
 
+PRINT 'ROW NUMBER: ' +  CONVERT(varchar,@ROWCOUNT)
+
+
 SET @RowCount -= 1;  --END ROW COUNTS
 
 END
+
+
+
+
 
 
 
