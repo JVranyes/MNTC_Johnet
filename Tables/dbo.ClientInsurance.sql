@@ -14,6 +14,7 @@
   [external_id] [varchar](25) NULL,
   [inactive] [bit] NULL,
   [deleted] [bit] NULL,
+  [notes] [varchar](max) NULL,
   [is_pending] [bit] NULL,
   [is_crossover_secondary] [bit] NULL,
   [medicare_secondary_code] [char](3) NULL,
@@ -55,4 +56,5 @@
   [clientins_id] [int] NULL
 )
 ON [PRIMARY]
+TEXTIMAGE_ON [PRIMARY]
 GO

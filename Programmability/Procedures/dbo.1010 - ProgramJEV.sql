@@ -15,14 +15,15 @@ FROM
 
 SELECT
 
-  Z_ServiceLedger.serviceledger_id,
+  zsl.serviceledger_id,
 
   Convert(varchar,ClientVisit.rev_timein,101) As ServiceDate,
   FORMAT(ClientVisit.timein,'HH:mm') AS StartTime,
   FORMAT(ClientVisit.timeout,'HH:mm') AS EndTime,
-  Convert(varchar,zb.date_batched,101) As BatchedDate,
-  Convert(varchar,Z_ServiceLedger.accounting_date,101) As InvoiceDate,
-  Payer.payer_name As Payer,
+  ClientVisit.clientvisit_id,
+  Convert(varchar,zc.date_batched,101) As BatchedDate,
+  Convert(varchar,zsl.accounting_date,101) As InvoiceDate,
+  p1.payer_name As Payer,
   Z_PayerType.payertype_name As PayerType,
   ClientVisit.visittype As Program,
 --GEO AREA
@@ -49,15 +50,15 @@ SELECT
   Convert(varchar,Z_Payment.deposit_date,101) As DepositDate,
   Convert(varchar,Z_Payment.date_entered,101) As PaymentDate,
 
-  Format(Z_ServiceLedger.amount, 'c', 'en-US') As Amount,
+  Format(zsl.amount, 'c', 'en-US') As Amount,
   Format(ClientVisitBilling.service_amount,'c','en-US') AS BilledServiceAmount,
   Format(Z_Payment.paid_amount, 'c', 'en-US') As CheckAmount,
-  Z_ServiceLedger.adjustment_group_code,
-  Z_ServiceLedger.adjustment_reason_code,
+  zsl.adjustment_group_code,
+  zsl.adjustment_reason_code,
 CASE WHEN ClientVisit.cptcode IN ('90791', '90832', '90834', '90837', '90846', '90847', '90853')
 THEN 'Taxable'
 END AS TAXABLE,
-
+  p2.payer_name AS SecondaryPayer,
   Z_Payment.payer_desc,
 
   Z_Payment.payment_id,
@@ -67,9 +68,9 @@ END AS TAXABLE,
   Format(Z_Payment.paid_amount, 'c', 'en-US') AS PaidAmount,
   Z_Payment.notes,
   Format(Z_Payment.balance, 'c', 'en-US') AS Balance,
-  Z_ServiceLedger.description,
-  Z_ServiceLedger.revenue_code,
-  Z_ServiceLedger.receipt_code,
+  zsl.description,
+  zsl.revenue_code,
+  zsl.receipt_code,
   Z_Payment.date_entered,
   zc.batch_override_rendering,
   zc.cob_indicator,
@@ -103,7 +104,7 @@ END AS TAXABLE,
   zc.payer_desc AS ZCPayment_desc,
   zc.payer_id,
   zc.client_id,
-  zc.clientvisit_id,
+--  zc.clientvisit_id,
   zc.l2400_id,
   zc.l2300_id,
   zc.batch_id,
@@ -112,7 +113,7 @@ END AS TAXABLE,
   Format(zca.adjustment_amount, 'c', 'en-US') AS AdjAmt,
   zca.claim_id,
   zca.claimadj_id
-
+--
 --  zesli.service_unit_count,
 --  zesli.unit_of_measurement,
 --  zesli.submitted_charge_amount,
@@ -121,24 +122,24 @@ END AS TAXABLE,
 --  ec.emp_id,
 --  c.credentials
 
-From Z_ServiceLedger
-  Inner Join Clients ON Clients.client_id = Z_ServiceLedger.client_id
-  Inner Join ClientVisit On  ClientVisit.clientvisit_id = Z_ServiceLedger.clientvisit_id 
+From Z_ServiceLedger zsl
+  Inner Join Clients ON Clients.client_id = zsl.client_id
+  Inner Join ClientVisit On  ClientVisit.clientvisit_id = zsl.clientvisit_id 
    
   Inner Join ClientVisitBilling On ClientVisit.clientvisit_id =
     ClientVisitBilling.clientvisit_id
-  Inner Join Payer On ClientVisitBilling.pri_payer_id = Payer.payer_id
-  Inner Join Employees On Z_ServiceLedger.emp_id = Employees.emp_id
+  Inner Join Payer p1 On ClientVisitBilling.pri_payer_id = p1.payer_id
+  LEFT JOIN Payer p2 ON p2.payer_id = ClientVisitBilling.next_payer_id
+  Inner Join Employees On zsl.emp_id = Employees.emp_id
   Inner Join Location On ClientVisit.location_id = Location.location_id
   Inner Join GeoAreas On GeoAreas.geoareas_id = Location.geoareas_id
-  Inner Join Z_PayerType On Z_PayerType.payertype_id = Payer.payertype_id
-  LEFT Join Z_Payment On Z_ServiceLedger.payment_id = Z_Payment.payment_id
-  Inner Join LookupDict On Clients.dd13 = LookupDict.lookup_id
-  LEFT JOIN Z_Claim zc ON zc.claim_id = Z_ServiceLedger.claim_id
-  LEFT JOIN Z_Batch zb ON  Z_ServiceLedger.batch_id = zb.batch_id
-  LEFT JOIN Z_ClaimAdj zca ON Z_ServiceLedger.claim_id = zca.claim_id
+  Inner Join Z_PayerType On Z_PayerType.payertype_id = p1.payertype_id
+  Inner Join Z_Payment On zsl.payment_id = Z_Payment.payment_id
+  LEFT Join LookupDict On Clients.dd13 = LookupDict.lookup_id
+  LEFT JOIN Z_Claim zc ON zc.claim_id = zsl.claim_id
+  LEFT JOIN Z_ClaimAdj zca ON zsl.claim_id = zca.claim_id
+Where date_entered Between @param1 And @param2
 
-Where Z_ServiceLedger.accounting_date Between @param1 And @param2
 
 ) AS  BALANCE
 
@@ -148,6 +149,7 @@ ORDER BY BALANCE.claim_id, BALANCE.serviceledger_id
 
 
 --ORDER BY BALANCE.date_entered
+
 
 
 

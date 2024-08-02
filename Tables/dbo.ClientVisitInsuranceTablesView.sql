@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ClientVisitInsuranceTablesView] (
   [ins_id] [varchar](25) NULL,
-  [end_date] [datetime] NULL,
+  [end_date] [smalldatetime] NULL,
   [start_date] [smalldatetime] NULL,
   [payer_description] [varchar](40) NULL,
   [payer_code] [varchar](10) NULL,

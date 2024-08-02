@@ -328,7 +328,6 @@
   [referred_by] [varchar](75) NULL,
   [cognitive_status] [varchar](255) NULL,
   [functional_status] [varchar](255) NULL,
-  [race_omb3] [smallint] NULL,
   [race_omb2] [smallint] NULL,
   [race_omb] [smallint] NULL,
   [ethnicity_omb] [smallint] NULL,

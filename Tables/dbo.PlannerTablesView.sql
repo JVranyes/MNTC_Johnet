@@ -48,7 +48,12 @@
   [plan_time] [smalldatetime] NULL,
   [group_id] [smallint] NULL,
   [status_date] [smalldatetime] NULL,
-  [note] [varchar](100) NULL
+  [note] [varchar](100) NULL,
+  [plan_date] [smalldatetime] NULL,
+  [dow] [varchar](5) NULL,
+  [primary_emp_id] [smallint] NULL,
+  [week_of] [smalldatetime] NULL,
+  [plan_id] [int] NULL
 )
 ON [PRIMARY]
 GO
