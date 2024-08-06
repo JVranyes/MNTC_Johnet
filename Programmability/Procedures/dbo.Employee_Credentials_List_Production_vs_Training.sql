@@ -21,7 +21,7 @@ te.emp_id AS TRAINING_EMP_ID
 , e.login_datetime AS PRODUCTION_LASTLOGIN
 , te.email AS EMAIL
 
-FROM JohnetTRN.dbo.Employess te
+FROM JohnetTRN.dbo.Employees te
 FULL OUTER JOIN Employees e ON (e.last_name = te.last_name AND e.first_name = te.first_name) 
 
 WHERE te.email NOT LIKE '%credible%' AND e.term_date IS NULL AND e.emp_status = 'ACTIVE'
@@ -29,6 +29,7 @@ WHERE te.email NOT LIKE '%credible%' AND e.term_date IS NULL AND e.emp_status = 
 
 
 ORDER BY te.last_name, te.first_name
+
 
 
 

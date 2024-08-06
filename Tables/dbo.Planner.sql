@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Planner] (
   [team_id] [smallint] NULL,
   [IntegrationMessageId] [int] NULL,
+  [virtualvisitURL] [varchar](2000) NULL,
   [plan_datetime_utc] [datetime2] NULL,
   [source] [int] NULL,
   [date_waitlisted] [datetime] NULL,

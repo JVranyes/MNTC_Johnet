@@ -7,7 +7,9 @@
   [createdby_emp_id] [smallint] NULL,
   [date_created] [datetime] NULL,
   [client_id] [int] NULL,
-  [clientnote_id] [int] NULL
+  [clientnote_id] [int] NULL,
+  [note] [varchar](max) NULL
 )
 ON [PRIMARY]
+TEXTIMAGE_ON [PRIMARY]
 GO
